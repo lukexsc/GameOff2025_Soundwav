@@ -1,0 +1,121 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class ProtoUserProfile : MonoBehaviour
+{
+    [SerializeField] private CanvasGroup canvasGroup = default;
+    [SerializeField] private TMP_Text title = default;
+    [SerializeField] private TMP_Text bio = default;
+    [SerializeField] private TMP_Text details = default;
+    [SerializeField] private GameObject trackPrefab = default;
+    [SerializeField] private Transform tracksParent = default;
+    [SerializeField] private GameObject friendPrefab = default;
+    [SerializeField] private Transform friendsParent = default;
+
+    private List<ProtoTrackLink> tracks;
+    private List<ProtoUserSearchResult> friends;
+
+    private int TRACKS_COUNT = 12;
+    private int FRIENDS_COUNT = 12;
+    
+    private void OnValidate()
+    {
+        if (canvasGroup == null)
+        {
+            canvasGroup = GetComponent<CanvasGroup>();
+        }
+    }
+
+    private void Start()
+    {
+        tracks = new List<ProtoTrackLink>();
+        for (int i = 0; i < TRACKS_COUNT; i++)
+        {
+            GameObject resultObj = Instantiate(trackPrefab, tracksParent);
+            resultObj.name = $"Track ({i})";
+            resultObj.SetActive(true);
+            ProtoTrackLink result = resultObj.GetComponent<ProtoTrackLink>();
+            tracks.Add(result);
+        }
+
+        friends = new List<ProtoUserSearchResult>();
+        for (int i = 0; i < FRIENDS_COUNT; i++)
+        {
+            GameObject resultObj = Instantiate(friendPrefab, friendsParent);
+            resultObj.name = $"Friend ({i})";
+            resultObj.SetActive(true);
+            ProtoUserSearchResult result = resultObj.GetComponent<ProtoUserSearchResult>();
+            friends.Add(result);
+        }
+
+        details.text = $"Tracks — {tracks.Count}\nFriends — {friends.Count}";
+    }
+
+    public void Hide()
+    {
+        canvasGroup.alpha = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+    }
+
+    public void Show()
+    {
+        canvasGroup.alpha = 1f;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
+    }
+
+    public void LoadUser(in string username, in UserData data)
+    {
+        if (data.Tracks.Length > tracks.Count)
+        {
+            for (int i = tracks.Count-1; i < data.Tracks.Length; i++)
+            {
+                GameObject resultObj = Instantiate(trackPrefab, tracksParent);
+                resultObj.name = $"Track ({i})";
+                resultObj.SetActive(true);
+                ProtoTrackLink result = resultObj.GetComponent<ProtoTrackLink>();
+                tracks.Add(result);
+            }
+        }
+
+        if (data.Friends.Length > friends.Count)
+        {
+            for (int i = friends.Count-1; i < data.Friends.Length; i++)
+            {
+                GameObject resultObj = Instantiate(friendPrefab, friendsParent);
+                resultObj.name = $"Friend ({i})";
+                resultObj.SetActive(true);
+                ProtoUserSearchResult result = resultObj.GetComponent<ProtoUserSearchResult>();
+                friends.Add(result);
+            }
+        }
+
+        title.text = username;
+        bio.text = data.Bio;
+        details.text = $"Tracks — {data.Tracks.Length}\nFriends — {data.Friends.Length}";
+
+        for (int i = 0; i < tracks.Count; i++)
+        {
+            bool isActive = (i < data.Tracks.Length);
+            tracks[i].gameObject.SetActive(isActive);
+
+            tracks[i].trackName.text = (isActive) ? data.Tracks[i].TrackName : "";
+        }
+        
+        for (int i = 0; i < friends.Count; i++)
+        {
+            bool isActive = (i < data.Friends.Length);
+            friends[i].gameObject.SetActive(isActive);
+
+            friends[i].username.text = (isActive) ? data.Friends[i] : "";
+        }
+    }
+
+    public void UIClose()
+    {
+        Hide();
+    }
+}

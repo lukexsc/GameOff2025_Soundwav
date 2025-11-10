@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProtoUserSearchResult : MonoBehaviour
+public class ProtoTrackLink : MonoBehaviour
 {
     [SerializeField] private ProtoDatabase database = default;
 
-    public TMPro.TMP_Text username = default;
+    public TMPro.TMP_Text trackName = default;
+    public int trackID = default;
 
     public void UIOpen()
     {
-        database.OpenUser(username.text);
+        //database.OpenTrack();
     }
 }
