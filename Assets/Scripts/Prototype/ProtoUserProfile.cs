@@ -17,8 +17,8 @@ public class ProtoUserProfile : MonoBehaviour
     private List<ProtoTrackLink> tracks;
     private List<ProtoUserSearchResult> friends;
 
-    private int TRACKS_COUNT = 12;
-    private int FRIENDS_COUNT = 12;
+    private const int TRACKS_COUNT = 12;
+    private const int FRIENDS_COUNT = 12;
     
     private void OnValidate()
     {
@@ -53,21 +53,23 @@ public class ProtoUserProfile : MonoBehaviour
         details.text = $"Tracks — {tracks.Count}\nFriends — {friends.Count}";
     }
 
-    public void Hide()
+    public void RandomUser(in string username)
     {
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
+        title.text = username;
+        bio.text = "[No bio added.]";
+        details.text = $"Tracks — 0\nFriends — 0";
+
+        for (int i = 0; i < tracks.Count; i++)
+        {
+            tracks[i].gameObject.SetActive(false);
+        }
+        for (int i = 0; i < friends.Count; i++)
+        {
+            friends[i].gameObject.SetActive(false);
+        }
     }
 
-    public void Show()
-    {
-        canvasGroup.alpha = 1f;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
-    }
-
-    public void LoadUser(in string username, in UserData data)
+    public void LoadUser(in UserData data)
     {
         if (data.Tracks.Length > tracks.Count)
         {
@@ -93,7 +95,7 @@ public class ProtoUserProfile : MonoBehaviour
             }
         }
 
-        title.text = username;
+        title.text = data.Username;
         bio.text = data.Bio;
         details.text = $"Tracks — {data.Tracks.Length}\nFriends — {data.Friends.Length}";
 
@@ -103,6 +105,7 @@ public class ProtoUserProfile : MonoBehaviour
             tracks[i].gameObject.SetActive(isActive);
 
             tracks[i].trackName.text = (isActive) ? data.Tracks[i].TrackName : "";
+            tracks[i].username = data.Username;
         }
         
         for (int i = 0; i < friends.Count; i++)
@@ -112,6 +115,20 @@ public class ProtoUserProfile : MonoBehaviour
 
             friends[i].username.text = (isActive) ? data.Friends[i] : "";
         }
+    }
+
+    public void Hide()
+    {
+        canvasGroup.alpha = 0f;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
+    }
+
+    public void Show()
+    {
+        canvasGroup.alpha = 1f;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
     }
 
     public void UIClose()

@@ -4,45 +4,72 @@ using UnityEngine;
 
 public class ProtoDatabase : MonoBehaviour
 {
-    [SerializeField] private ProtoUserSearch userSearch = default;
     [SerializeField] private ProtoUserProfile userProfile = default;
+    [SerializeField] private ProtoTrackWindow trackWindow = default;
 
     [Header("Users")]
-    [SerializeField] private UserData defaultUser = default;
     [SerializeField] private UserData[] users = default;
 
     [Header("Tracks")]
-    [SerializeField] private TrackData defaultTrack = default;
     [SerializeField] private TrackData[] tracks = default;
 
-    public UserData FindUser(in string username)
+    public Optional<UserData> FindUser(in string username)
     {
         foreach (UserData user in users)
         {
             if (user.Username.Equals(username, System.StringComparison.CurrentCultureIgnoreCase))
             {
-                return user;
+                return new Optional<UserData>(user);
             }
         }
-        return defaultUser;
+        return new Optional<UserData>();
     }
 
-    public TrackData FindTrack(in int trackID)
+    public Optional<TrackData> FindTrack(in string username, in string trackName)
     {
+        bool matchUsername = false;
+        bool matchTrackName = false;
         foreach (TrackData track in tracks)
         {
-            if (track.ID == trackID)
+            matchUsername = track.Username.Equals(username, System.StringComparison.CurrentCultureIgnoreCase);
+            matchTrackName = track.TrackName.Equals(trackName, System.StringComparison.CurrentCultureIgnoreCase);
+            
+            if (matchUsername & matchTrackName)
             {
-                return track;
+                return new Optional<TrackData>(track);
             }
         }
-        return defaultTrack;
+        return new Optional<TrackData>();
     }
 
     public void OpenUser(in string username)
     {
-        //userSearch.Hide();
+        trackWindow.Hide();
         userProfile.Show();
-        userProfile.LoadUser(username, FindUser(username));
+        Optional<UserData> user = FindUser(username);
+
+        if (user.Enabled)
+        {
+            userProfile.LoadUser(user.Value);
+        }
+        else
+        {
+            userProfile.RandomUser(username);
+        }
+    }
+
+    public void OpenTrack(in string username, in string trackName)
+    {
+        trackWindow.Show();
+        Optional<TrackData> track = FindTrack(username, trackName);
+
+        if (track.Enabled)
+        {
+            trackWindow.LoadTrack(track);
+        }
+        else
+        {
+            trackWindow.RandomTrack(username, trackName);
+        }
     }
 }
