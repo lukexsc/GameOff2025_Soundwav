@@ -78,7 +78,8 @@ public class ProtoTrackWindow : MonoBehaviour
         {
             bool isActive = (i < data.Comments.Length);
             comments[i].gameObject.SetActive(isActive);
-            comments[i].content.text = data.Comments[i].Content;
+            comments[i].SetUsername(data.Comments[i].Username);
+            comments[i].SetComment(data.Comments[i].Content);
         }
 
         int randomSeed = (data.Username + data.TrackName).GetHashCode();

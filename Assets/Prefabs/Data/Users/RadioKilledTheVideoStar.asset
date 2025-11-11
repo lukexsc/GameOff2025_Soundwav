@@ -24,3 +24,5 @@ MonoBehaviour:
     data: {fileID: 11400000, guid: 9038c7605d604264ba8d281f35bdf8b7, type: 2}
   - trackName: test2.wav
     data: {fileID: 11400000, guid: 9038c7605d604264ba8d281f35bdf8b7, type: 2}
+  - trackName: The Final Countdown
+    data: {fileID: 11400000, guid: d58e068f82b64dd429a3878bee55d9c6, type: 2}

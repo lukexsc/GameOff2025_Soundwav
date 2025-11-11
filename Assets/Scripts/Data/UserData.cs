@@ -22,7 +22,7 @@ public class UserData : ScriptableObject
         [SerializeField] private string trackName;
         [SerializeField] private TrackData data;
 
-        public string TrackName => trackName;
+        public string TrackName => (data == null) ? trackName : data.TrackName;
         public TrackData Data => data;
     }
 }
