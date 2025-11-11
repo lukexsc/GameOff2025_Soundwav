@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 517c7b47c48324044bcedcad36f1d153, type: 3}
+  m_Name: ProtoTutorialEmail
+  m_EditorClassIdentifier: 
+  sender: jim@dhs.gov
+  subject: Investigation
+  content: 'I need you to investigate a lead into Senator Smith''s death.
+
+
+    The
+    autopsy is still pending, but we believe it was made to look like a suicide.
+    The senator''s computer had an unmarked compact disk. The contents were corrupted,
+    but we were able to determine It contained one file: revenge.wav
+
+
+    The file''s
+    metadata referenced a website known as Soundwav.com which went offline less than
+    a week ago, taking all of it''s files with it.
+
+
+    This is too specific to
+    be coincidence.
+
+
+    We''ve provided an archived copy of the site. You need
+    to find who sent the file.
+
+
+    From what was recovered, the file''s author
+    is "BleakMusic" but anyone could have downloaded it.
+
+
+    Because an account
+    is needed to download files, the culprit must have an account on this stie. Find
+    their username and send it to me. I''ll take care of the rest.'
