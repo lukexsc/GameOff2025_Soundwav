@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ProtoUserSearch : MonoBehaviour
 {
+    [SerializeField] private ProtoHistory history = default;
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_InputField searchBar = default;
     [SerializeField] private TMP_Text resultText = default;
@@ -48,8 +49,13 @@ public class ProtoUserSearch : MonoBehaviour
     
     public void Search()
     {
-        string searchPhrase = searchBar.text;
+        Search(searchBar.text);
+        history.AddUserSearch(searchBar.text);
+    }
 
+    public void Search(in string searchPhrase)
+    {
+        searchBar.text = searchPhrase;
         if (searchPhrase.Trim().Length <= 0) // Show All Users
         {
             foreach (ProtoUserSearchResult result in results)

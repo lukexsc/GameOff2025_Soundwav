@@ -103,7 +103,7 @@ public class ProtoUserProfile : MonoBehaviour
         {
             bool isActive = (i < data.Tracks.Length);
             tracks[i].gameObject.SetActive(isActive);
-
+            
             tracks[i].trackName.text = (isActive) ? data.Tracks[i].TrackName : "";
             tracks[i].username = data.Username;
         }
