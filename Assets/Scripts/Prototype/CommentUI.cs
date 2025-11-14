@@ -7,7 +7,7 @@ public class CommentUI : MonoBehaviour
 {
     [SerializeField] private TMP_Text scalingText = default;
     [SerializeField] private TMP_Text username = default;
-    [SerializeField] private TMP_Text comment = default;
+    [SerializeField] private InputFieldNoScroll commentInput = default;
 
     public void SetUsername(in string username)
     {
@@ -17,6 +17,6 @@ public class CommentUI : MonoBehaviour
     public void SetComment(in string comment)
     {
         scalingText.text = "\n" + comment;
-        this.comment.text = comment;
+        commentInput.text = comment;
     }
 }

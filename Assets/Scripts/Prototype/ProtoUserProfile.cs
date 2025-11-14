@@ -7,7 +7,7 @@ public class ProtoUserProfile : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_Text title = default;
-    [SerializeField] private TMP_Text bio = default;
+    [SerializeField] private TMP_InputField bio = default;
     [SerializeField] private TMP_Text details = default;
     [SerializeField] private GameObject trackPrefab = default;
     [SerializeField] private Transform tracksParent = default;

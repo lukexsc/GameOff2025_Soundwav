@@ -40,7 +40,15 @@ public class ProtoUserSearch : MonoBehaviour
 
         resultText.text = $"{results.Count} users";
     }
-    
+
+    private void Update()
+    {
+        if (canvasGroup.interactable & Input.GetKeyDown(KeyCode.Return))
+        {
+            Search();
+        }
+    }
+
     public void Search()
     {
         Search(searchBar.text);

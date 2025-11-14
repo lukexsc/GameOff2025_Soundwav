@@ -9,7 +9,7 @@ public class ProtoTrackWindow : MonoBehaviour
     [SerializeField] private TMP_Text title = default;
     [SerializeField] private TMP_Text username = default;
     [SerializeField] private TMP_Text time = default;
-    [SerializeField] private TMP_Text description = default;
+    [SerializeField] private TMP_InputField description = default;
     [SerializeField] private GameObject commentPrefab = default;
     [SerializeField] private Transform commentParent = default;
     [SerializeField] private RectTransform[] waveformLines = default;
