@@ -16,6 +16,13 @@ public static class Tools
         rect.Set(rect.x, rect.y, rect.width, height);
     }
 
+    public static void SetFullVisibility(this CanvasGroup group, bool visible)
+    {
+        group.interactable = visible;
+        group.blocksRaycasts = visible;
+        group.alpha = (visible) ? 1f : 0f;
+    }
+
     public static void MarkDirty(GameObject obj)
     {
 #if UNITY_EDITOR

@@ -6,6 +6,7 @@ using TMPro;
 public class ProtoMailbox : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
+    [SerializeField] private CanvasGroup backbutton = default;
     [SerializeField] private TMP_Text emailText = default;
     [SerializeField] private TMP_InputField emailTextSelectable = default;
     [SerializeField] private GameObject emailPrefab = default;
@@ -18,7 +19,12 @@ public class ProtoMailbox : MonoBehaviour
             canvasGroup = GetComponent<CanvasGroup>();
         }
     }
-    
+
+    private void Start()
+    {
+        Show();
+    }
+
     public void AddEmail(in EmailData data, in int index)
     {
         GameObject emailObj = Instantiate(emailPrefab, emailParent);
@@ -37,15 +43,13 @@ public class ProtoMailbox : MonoBehaviour
 
     public void Hide()
     {
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
+        canvasGroup.SetFullVisibility(false);
+        backbutton.SetFullVisibility(true);
     }
 
     public void Show()
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup.SetFullVisibility(true);
+        backbutton.SetFullVisibility(false);
     }
 }

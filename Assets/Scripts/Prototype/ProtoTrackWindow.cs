@@ -89,16 +89,12 @@ public class ProtoTrackWindow : MonoBehaviour
 
     public void Hide()
     {
-        canvasGroup.alpha = 0f;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
+        canvasGroup.SetFullVisibility(false);
     }
 
     public void Show()
     {
-        canvasGroup.alpha = 1f;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
+        canvasGroup.SetFullVisibility(true);
     }
 
     private void SetWaveform()
