@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: '[Deleted] - BleakMusic'
+  m_EditorClassIdentifier: 
+  trackName: '[Deleted]'
+  username: BleakMusic
+  time: 4:51
+  description: '[Deleted for violating Soundwav''s terms of service]'
+  comments:
+  - username: Folkie
+    content: What happened to the track? I didn't even get to listen to it.
+  - username: ChalkRock
+    content: I've never seen this before, don't deleted tracks get removed from your
+      account? Is this a bug?
+  - username: BleakMusic
+    content: Hi everyone, sorry about this. I don't know what happened. It looks
+      fine when I uploaded it, description and all. But now I can't even upload it
+      again or I get a warning.
+  - username: Tuotter
+    content: I've seen this before. This is when the admin removes something manually.
+      Not sure why it stays, maybe to prevent you from re-uploading it?
+  - username: ChalkRock
+    content: '@Tuottor That''s wild, I didn''t know they did that. Wait so, what
+      exactly was the song? @BleakMusic do you know why it was removed.'
+  - username: BleakMusic
+    content: I have no idea why it'd need to be taken down. Maybe it had something
+      bad in it? I haven't actually listened to it so I'm not sure.
+  - username: ChalkRock
+    content: How did you not listen to it before uploading?
+  - username: BleakMusic
+    content: I upload them in batches, usually when my favorite bands release new
+      tracks, like this one. It's just more convenient for me to listen to. Or it
+      was.
+  - username: Folkie
+    content: Does anyone else have it? I'm really curious to hear it now!
+  - username: The_Word_Underscore
+    content: 'Found another one. Hey, so it looks like the admin is nuking things
+      from orbit now. I think they''re friends with the band so they''re removing
+      anything that violates their copyright. Pretty hypocritical since they leave
+      tons of other re-uploads alone.
+
+
+      I posted most of the tracks I found
+      that the admin removed to my account.'

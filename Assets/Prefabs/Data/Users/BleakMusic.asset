@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
+  m_Name: BleakMusic
+  m_EditorClassIdentifier: 
+  username: BleakMusic
+  suspended: 0
+  bio: Hi there! I mostly re-upload songs that I like which aren't on Soundwav yet.
+    I prefer dark, creepy, or unusual tracks. But I'm a sucker for a good sad song.
+    If I've uploaded one of your songs and you want me to take it down, just message
+    me. No copyright infringement intended!
+  friends:
+  - ChalkRock
+  - Folkie
+  tracks:
+  - trackName: Hollow
+    data: {fileID: 11400000, guid: cca77f0926d6ac747804af81a6d2a896, type: 2}
+  - trackName: Stradivarius
+    data: {fileID: 11400000, guid: 24e658a6dba40874588e054d5638e2f2, type: 2}
+  - trackName: Temp3
+    data: {fileID: 0}
+  - trackName: Temp4
+    data: {fileID: 0}
+  - trackName: '[Deleted]'
+    data: {fileID: 11400000, guid: 8d733aea893596746a663096086d687e, type: 2}
+  - trackName: Temp6
+    data: {fileID: 0}

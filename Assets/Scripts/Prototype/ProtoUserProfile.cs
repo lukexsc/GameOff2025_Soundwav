@@ -9,6 +9,7 @@ public class ProtoUserProfile : MonoBehaviour
     [SerializeField] private TMP_Text title = default;
     [SerializeField] private TMP_InputField bio = default;
     [SerializeField] private TMP_Text details = default;
+    [SerializeField] private TMP_Text suspendText = default;
     [SerializeField] private GameObject trackPrefab = default;
     [SerializeField] private Transform tracksParent = default;
     [SerializeField] private GameObject friendPrefab = default;
@@ -19,7 +20,9 @@ public class ProtoUserProfile : MonoBehaviour
 
     private const int TRACKS_COUNT = 12;
     private const int FRIENDS_COUNT = 12;
-    
+
+    private const string SUSPEND_TEXT = "[This account is suspended]";
+
     private void OnValidate()
     {
         if (canvasGroup == null)
@@ -58,6 +61,7 @@ public class ProtoUserProfile : MonoBehaviour
         title.text = username;
         bio.text = "[No bio added.]";
         details.text = $"Tracks — 0\nFriends — 0";
+        suspendText.text = "";
 
         for (int i = 0; i < tracks.Count; i++)
         {
@@ -98,14 +102,14 @@ public class ProtoUserProfile : MonoBehaviour
         title.text = data.Username;
         bio.text = data.Bio;
         details.text = $"Tracks — {data.Tracks.Length}\nFriends — {data.Friends.Length}";
+        suspendText.text = (data.Suspended) ? SUSPEND_TEXT : "";
 
         for (int i = 0; i < tracks.Count; i++)
         {
             bool isActive = (i < data.Tracks.Length);
             tracks[i].gameObject.SetActive(isActive);
-            
-            tracks[i].trackName.text = (isActive) ? data.Tracks[i].TrackName : "";
-            tracks[i].username = data.Username;
+
+            if (isActive) tracks[i].SetValues(data.Username, data.Tracks[i]);
         }
         
         for (int i = 0; i < friends.Count; i++)
