@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ProtoTrackLink : MonoBehaviour
+public class TrackLink : MonoBehaviour
 {
-    [SerializeField] private ProtoDatabase database = default;
+    [SerializeField] private SWDatabase database = default;
     [SerializeField] private TMP_Text nameText = default;
     [SerializeField] private TMP_Text detailsText = default;
     

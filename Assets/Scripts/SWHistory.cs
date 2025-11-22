@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProtoHistory : MonoBehaviour
+public class SWHistory : MonoBehaviour
 {
     public enum Window { UserSearch, User, Track}
 
-    [SerializeField] private ProtoDatabase database = default;
+    [SerializeField] private SWDatabase database = default;
 
     private Stack<GameState> history = default;
 

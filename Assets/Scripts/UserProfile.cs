@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ProtoUserProfile : MonoBehaviour
+public class UserProfile : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_Text title = default;
@@ -15,13 +15,15 @@ public class ProtoUserProfile : MonoBehaviour
     [SerializeField] private GameObject friendPrefab = default;
     [SerializeField] private Transform friendsParent = default;
 
-    private List<ProtoTrackLink> tracks;
-    private List<ProtoUserSearchResult> friends;
+    private List<TrackLink> tracks;
+    private List<UserSearchResult> friends;
 
     private const int TRACKS_COUNT = 12;
     private const int FRIENDS_COUNT = 12;
 
     private const string SUSPEND_TEXT = "[This account is suspended]";
+
+    public bool Open => canvasGroup.interactable;
 
     private void OnValidate()
     {
@@ -33,23 +35,23 @@ public class ProtoUserProfile : MonoBehaviour
 
     private void Start()
     {
-        tracks = new List<ProtoTrackLink>();
+        tracks = new List<TrackLink>();
         for (int i = 0; i < TRACKS_COUNT; i++)
         {
             GameObject resultObj = Instantiate(trackPrefab, tracksParent);
             resultObj.name = $"Track ({i})";
             resultObj.SetActive(true);
-            ProtoTrackLink result = resultObj.GetComponent<ProtoTrackLink>();
+            TrackLink result = resultObj.GetComponent<TrackLink>();
             tracks.Add(result);
         }
 
-        friends = new List<ProtoUserSearchResult>();
+        friends = new List<UserSearchResult>();
         for (int i = 0; i < FRIENDS_COUNT; i++)
         {
             GameObject resultObj = Instantiate(friendPrefab, friendsParent);
             resultObj.name = $"Friend ({i})";
             resultObj.SetActive(true);
-            ProtoUserSearchResult result = resultObj.GetComponent<ProtoUserSearchResult>();
+            UserSearchResult result = resultObj.GetComponent<UserSearchResult>();
             friends.Add(result);
         }
 
@@ -82,7 +84,7 @@ public class ProtoUserProfile : MonoBehaviour
                 GameObject resultObj = Instantiate(trackPrefab, tracksParent);
                 resultObj.name = $"Track ({i})";
                 resultObj.SetActive(true);
-                ProtoTrackLink result = resultObj.GetComponent<ProtoTrackLink>();
+                TrackLink result = resultObj.GetComponent<TrackLink>();
                 tracks.Add(result);
             }
         }
@@ -94,7 +96,7 @@ public class ProtoUserProfile : MonoBehaviour
                 GameObject resultObj = Instantiate(friendPrefab, friendsParent);
                 resultObj.name = $"Friend ({i})";
                 resultObj.SetActive(true);
-                ProtoUserSearchResult result = resultObj.GetComponent<ProtoUserSearchResult>();
+                UserSearchResult result = resultObj.GetComponent<UserSearchResult>();
                 friends.Add(result);
             }
         }

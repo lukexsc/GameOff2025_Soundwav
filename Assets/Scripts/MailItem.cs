@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProtoMailItem : MonoBehaviour
+public class MailItem : MonoBehaviour
 {
-    [SerializeField] private ProtoDatabase database = default;
+    [SerializeField] private SWDatabase database = default;
 
     public TMPro.TMP_Text email = default;
     public int mailIndex = default;

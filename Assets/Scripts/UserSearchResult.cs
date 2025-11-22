@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProtoUserSearchResult : MonoBehaviour
+public class UserSearchResult : MonoBehaviour
 {
-    [SerializeField] private ProtoDatabase database = default;
+    [SerializeField] private SWDatabase database = default;
 
     public TMPro.TMP_Text username = default;
 

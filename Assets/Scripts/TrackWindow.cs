@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ProtoTrackWindow : MonoBehaviour
+public class TrackWindow : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_Text title = default;
@@ -20,7 +20,9 @@ public class ProtoTrackWindow : MonoBehaviour
     private const int COMMENTS_COUNT = 12;
     private const float WAVE_MIN_HEIGHT = 12f;
     private const float WAVE_MAX_HEIGHT = 130f;
-    
+
+    public bool Open => canvasGroup.interactable;
+
     private void OnValidate()
     {
         if (canvasGroup == null)
@@ -74,10 +76,14 @@ public class ProtoTrackWindow : MonoBehaviour
             }
         }
 
-        for (int i=0; i < comments.Count; i++)
+        foreach (CommentUI comment in comments)
         {
-            bool isActive = (i < data.Comments.Length);
-            comments[i].gameObject.SetActive(isActive);
+            comment.gameObject.SetActive(false);
+        }
+
+        for (int i=0; i < data.Comments.Length; i++)
+        {
+            comments[i].gameObject.SetActive(true);
             comments[i].SetUsername(data.Comments[i].Username);
             comments[i].SetComment(data.Comments[i].Content);
         }

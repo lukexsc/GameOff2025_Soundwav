@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ProtoReportOne : MonoBehaviour
+public class ReportOne : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_InputField answerInput = default;

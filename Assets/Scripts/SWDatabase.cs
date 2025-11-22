@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProtoDatabase : MonoBehaviour
+public class SWDatabase : MonoBehaviour
 {
-    [SerializeField] private ProtoHistory history = default;
-    [SerializeField] private ProtoUserSearch userSearch = default;
-    [SerializeField] private ProtoUserProfile userProfile = default;
-    [SerializeField] private ProtoTrackWindow trackWindow = default;
-    [SerializeField] private ProtoMailbox mailbox = default;
+    [SerializeField] private SWHistory history = default;
+    [SerializeField] private UserSearch userSearch = default;
+    [SerializeField] private UserProfile userProfile = default;
+    [SerializeField] private TrackWindow trackWindow = default;
+    [SerializeField] private Mailbox mailbox = default;
 
     [Header("Users")]
     [SerializeField] private UserData[] users = default;
@@ -92,15 +92,15 @@ public class ProtoDatabase : MonoBehaviour
         mailbox.LoadEmail(emails[emailIndex]);
     }
 
-    public void LoadHistory(in ProtoHistory.GameState backState)
+    public void LoadHistory(in SWHistory.GameState backState)
     {
-        if (backState.window == ProtoHistory.Window.UserSearch)
+        if (backState.window == SWHistory.Window.UserSearch)
         {
             userProfile.Hide();
             trackWindow.Hide();
             userSearch.Search(backState.search);
         }
-        else if (backState.window == ProtoHistory.Window.User)
+        else if (backState.window == SWHistory.Window.User)
         {
             userProfile.Show();
             trackWindow.Hide();
@@ -109,7 +109,7 @@ public class ProtoDatabase : MonoBehaviour
             if (user.Enabled) userProfile.LoadUser(user.Value);
             else userProfile.RandomUser(backState.username);
         }
-        else if (backState.window == ProtoHistory.Window.Track)
+        else if (backState.window == SWHistory.Window.Track)
         {
             trackWindow.Show();
             Optional<TrackData> track = FindTrack(backState.username, backState.trackName);

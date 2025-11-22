@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ProtoMailbox : MonoBehaviour
+public class Mailbox : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private CanvasGroup backbutton = default;
@@ -29,7 +29,7 @@ public class ProtoMailbox : MonoBehaviour
     {
         GameObject emailObj = Instantiate(emailPrefab, emailParent);
         emailObj.name = $"Email ({data.Subject})";
-        ProtoMailItem email = emailObj.GetComponent<ProtoMailItem>();
+        MailItem email = emailObj.GetComponent<MailItem>();
         email.email.text = $"{data.Sender}\n{data.Subject}";
         email.mailIndex = index;
         emailObj.SetActive(true);
