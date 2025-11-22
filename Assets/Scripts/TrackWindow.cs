@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class TrackWindow : MonoBehaviour
@@ -10,6 +11,7 @@ public class TrackWindow : MonoBehaviour
     [SerializeField] private TMP_Text username = default;
     [SerializeField] private TMP_Text time = default;
     [SerializeField] private TMP_InputField description = default;
+    [SerializeField] private ScrollRect commentScroll = default;
     [SerializeField] private GameObject commentPrefab = default;
     [SerializeField] private Transform commentParent = default;
     [SerializeField] private RectTransform[] waveformLines = default;
@@ -56,6 +58,7 @@ public class TrackWindow : MonoBehaviour
         }
 
         SetWaveform();
+        commentScroll.ResetScroll();
     }
 
     public void LoadTrack(in TrackData data)
@@ -91,6 +94,7 @@ public class TrackWindow : MonoBehaviour
         int randomSeed = (data.Username + data.TrackName).GetHashCode();
         Random.InitState(randomSeed);
         SetWaveform();
+        commentScroll.ResetScroll();
     }
 
     public void Hide()

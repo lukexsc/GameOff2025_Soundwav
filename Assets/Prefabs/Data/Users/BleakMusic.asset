@@ -15,22 +15,24 @@ MonoBehaviour:
   username: BleakMusic
   suspended: 0
   bio: Hi there! I mostly re-upload songs that I like which aren't on Soundwav yet.
-    I prefer dark, creepy, or unusual tracks. But I'm a sucker for a good sad song.
+    I prefer dark, wierd, or unusual tracks. But I'm a sucker for a good sad song.
     If I've uploaded one of your songs and you want me to take it down, just message
     me. No copyright infringement intended!
   friends:
   - ChalkRock
   - Folkie
+  - NotPop
+  - Tuotter
   tracks:
   - trackName: Hollow
     data: {fileID: 11400000, guid: cca77f0926d6ac747804af81a6d2a896, type: 2}
   - trackName: Stradivarius
     data: {fileID: 11400000, guid: 24e658a6dba40874588e054d5638e2f2, type: 2}
-  - trackName: Temp3
-    data: {fileID: 0}
-  - trackName: Temp4
-    data: {fileID: 0}
+  - trackName: Revenge
+    data: {fileID: 11400000, guid: ec09818977e12ca4cb290ee1537c0b92, type: 2}
+  - trackName: Falling, Stars and Angels
+    data: {fileID: 11400000, guid: 822ab06e64593af49aca5bedffd02b3b, type: 2}
   - trackName: '[Deleted]'
     data: {fileID: 11400000, guid: 8d733aea893596746a663096086d687e, type: 2}
-  - trackName: Temp6
-    data: {fileID: 0}
+  - trackName: Alas, Alas
+    data: {fileID: 11400000, guid: f9ee4448975331744b31836b2c55ea44, type: 2}

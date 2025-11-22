@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class Mailbox : MonoBehaviour
 {
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private CanvasGroup backbutton = default;
+    [SerializeField] private ScrollRect textScroll = default;
     [SerializeField] private TMP_Text emailText = default;
     [SerializeField] private TMP_InputField emailTextSelectable = default;
     [SerializeField] private GameObject emailPrefab = default;
@@ -39,6 +41,7 @@ public class Mailbox : MonoBehaviour
     {
         emailText.text = data.Content;
         emailTextSelectable.text = data.Content;
+        textScroll.ResetScroll();
     }
 
     public void Hide()

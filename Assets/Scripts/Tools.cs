@@ -23,6 +23,12 @@ public static class Tools
         group.alpha = (visible) ? 1f : 0f;
     }
 
+    public static void ResetScroll(this UnityEngine.UI.ScrollRect scrollArea)
+    {
+        if (scrollArea.horizontal) scrollArea.horizontalScrollbar.value = 1f;
+        if (scrollArea.vertical) scrollArea.verticalScrollbar.value = 1f;
+    }
+
     public static void MarkDirty(GameObject obj)
     {
 #if UNITY_EDITOR

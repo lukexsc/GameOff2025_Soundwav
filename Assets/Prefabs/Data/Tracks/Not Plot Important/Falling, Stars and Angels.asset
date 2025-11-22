@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Falling, Stars and Angels
+  m_EditorClassIdentifier: 
+  trackName: Falling, Stars and Angels
+  username: BleakMusic
+  time: 7:37
+  description: 'Falling, Stars and Angels by The Illuminauts
+
+
+    [I''ll update
+    with my thoughts when I''ve listened to this. I''m really hopeful since this
+    is the first single they''ve released in a long time and I love love LOVED their
+    last epic track]'
+  comments:
+  - username: Folkie
+    content: Well it's certainly... ambient.
+  - username: Tuotter
+    content: I shouldn't have let a seven minute song with a provoking title get
+      my hopes up. There's nothing of substance to grab onto, you just fall into
+      a pit of vaguely catchy electronica.
+  - username: ChalkRock
+    content: 'UGH. OK I have nothing against electronic music, but I''m kind of with
+      Tuotter that this is the sort of song that just exists to build up to a drop,
+      like for a commercial or trailer. '
+  - username: Folkie
+    content: Honestly, this might actually be for a trailer, they had a different
+      producer for this who frequently works with movie studios.
+  - username: NotPop
+    content: you're all so pretentious. this is banger

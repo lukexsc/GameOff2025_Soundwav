@@ -2039,7 +2039,7 @@ GameObject:
   - component: {fileID: 267871585}
   - component: {fileID: 267871584}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View (Comments)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4382,7 +4382,7 @@ GameObject:
   - component: {fileID: 604256737}
   - component: {fileID: 604256736}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View (Tracks)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7183,6 +7183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 894756977}
   backbutton: {fileID: 1572923484}
+  textScroll: {fileID: 1796828829}
   emailText: {fileID: 1325409364}
   emailTextSelectable: {fileID: 1421688900}
   emailPrefab: {fileID: 156061788}
@@ -9971,11 +9972,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: add42fb47e2233d4d835add9a7d5db70, type: 2}
   - {fileID: 11400000, guid: 2ebd35fd974061e439c6ba543d55b300, type: 2}
   - {fileID: 11400000, guid: 89e2264601272b144bc4f68f0d5acfaf, type: 2}
+  - {fileID: 11400000, guid: 344f25939c45b1d4bba6d95921efa337, type: 2}
   tracks:
   - {fileID: 11400000, guid: d58e068f82b64dd429a3878bee55d9c6, type: 2}
-  - {fileID: 11400000, guid: 8d733aea893596746a663096086d687e, type: 2}
   - {fileID: 11400000, guid: cca77f0926d6ac747804af81a6d2a896, type: 2}
   - {fileID: 11400000, guid: 24e658a6dba40874588e054d5638e2f2, type: 2}
+  - {fileID: 11400000, guid: ec09818977e12ca4cb290ee1537c0b92, type: 2}
+  - {fileID: 11400000, guid: 822ab06e64593af49aca5bedffd02b3b, type: 2}
+  - {fileID: 11400000, guid: 8d733aea893596746a663096086d687e, type: 2}
+  - {fileID: 11400000, guid: f9ee4448975331744b31836b2c55ea44, type: 2}
   - {fileID: 11400000, guid: f6f45cea3881d384bb2f90141fb5626c, type: 2}
   emails:
   - {fileID: 11400000, guid: 771b855bea87cca4fbbe2d0a97b7ff0d, type: 2}
@@ -10453,6 +10458,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 1163846159}
   searchBar: {fileID: 1026418796}
   resultText: {fileID: 401215467}
+  resultScroll: {fileID: 1786538734}
   userResultPrefab: {fileID: 44330946}
   resultParent: {fileID: 1021111165}
 --- !u!225 &1163846159
@@ -16223,7 +16229,7 @@ GameObject:
   - component: {fileID: 1786538735}
   - component: {fileID: 1786538734}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View (Users)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16331,7 +16337,7 @@ GameObject:
   - component: {fileID: 1796828830}
   - component: {fileID: 1796828829}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View (Text)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16972,8 +16978,10 @@ MonoBehaviour:
   bio: {fileID: 1041558542}
   details: {fileID: 445965283}
   suspendText: {fileID: 1370297229}
+  trackScroll: {fileID: 604256736}
   trackPrefab: {fileID: 1806714074}
   tracksParent: {fileID: 1879499907}
+  friendScroll: {fileID: 2022032168}
   friendPrefab: {fileID: 1526904543}
   friendsParent: {fileID: 1992430093}
 --- !u!1 &1849589114
@@ -18680,7 +18688,7 @@ GameObject:
   - component: {fileID: 2022032169}
   - component: {fileID: 2022032168}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Scroll View (Friends)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18985,6 +18993,7 @@ MonoBehaviour:
   username: {fileID: 217264256}
   time: {fileID: 1280844013}
   description: {fileID: 949645224}
+  commentScroll: {fileID: 267871584}
   commentPrefab: {fileID: 439698124}
   commentParent: {fileID: 1707719580}
   waveformLines:

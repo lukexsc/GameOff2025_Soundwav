@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class UserSearch : MonoBehaviour
@@ -9,6 +10,7 @@ public class UserSearch : MonoBehaviour
     [SerializeField] private CanvasGroup canvasGroup = default;
     [SerializeField] private TMP_InputField searchBar = default;
     [SerializeField] private TMP_Text resultText = default;
+    [SerializeField] private ScrollRect resultScroll = default;
     [SerializeField] private GameObject userResultPrefab = default;
     [SerializeField] private Transform resultParent = default;
 
@@ -77,6 +79,7 @@ public class UserSearch : MonoBehaviour
             }
             resultText.text = $"{count} users containing \"{searchPhrase}\"";
         }
+        resultScroll.ResetScroll();
     }
 
     public void Hide()

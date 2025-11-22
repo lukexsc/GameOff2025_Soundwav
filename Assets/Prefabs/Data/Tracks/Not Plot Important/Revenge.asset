@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Revenge
+  m_EditorClassIdentifier: 
+  trackName: Vengeance
+  username: BleakMusic
+  time: 4:25
+  description: 'Vengeance by Ostiarii
+
+
+    I''d never heard of this band but meatspace
+    friend of mine recommended it as "If Dante''s Inferno was Bohemian Rhapsody"
+    which, could you possibly not check *that* out? I don''t think it quite lived
+    up to that reputation but it''s certainly unique. I love the choir, the organ,
+    percusive flames. This would be a killer villain track.'
+  comments:
+  - username: Tuotter
+    content: I'm utterly shocked that you haven't heard of the Ostiarii before. Your
+      past tracks suggest you have a soft spot for, as you say, "villain songs" (although
+      that grossly misrepresents the content of the song which is all about the singer
+      bringing those who commit the sin of revenge to justice which the dead accuse
+      him is identical, but they prove their conviction by not retaliating at the
+      end). Most of their works isn't online, they primarily believe in physical
+      media, I have a vinyl of their first album. Admittedly, it makes them harder
+      to get into, but I appreciate their dedication to the physical medium. But
+      their later albums are easier to access, each one "advances" technology forward.
+      "Revenge" was released on CD. I suspect they will post online in their next
+      album.
+  - username: NotPop
+    content: holy shit, dude, it's a comment section not an essay section
+  - username: NotPop
+    content: cool song tho
+  - username: ChalkRock
+    content: This is epic! I totally get the Queen connection but this is so much
+      more METAL! Has anybody uploading their older albums online? I'd love to hear
+      it but I'm not going to get a phonograph or whatever
+  - username: Tuotter
+    content: That's really against the spirit of music, don't you think? The idea
+      of lossily compressed mp3s of people recording a beautiful record on their
+      phone being someone's first impression of the Ostiarii makes my skin crawl.
+  - username: Tuotter
+    content: And it isn't "metal" it's psychadelic rock, but they are influenced
+      by a lot of industrial and avant-garde metal bands.
+  - username: NotPop
+    content: oh my god

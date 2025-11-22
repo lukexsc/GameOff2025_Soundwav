@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class UserProfile : MonoBehaviour
@@ -10,8 +11,10 @@ public class UserProfile : MonoBehaviour
     [SerializeField] private TMP_InputField bio = default;
     [SerializeField] private TMP_Text details = default;
     [SerializeField] private TMP_Text suspendText = default;
+    [SerializeField] private ScrollRect trackScroll = default;
     [SerializeField] private GameObject trackPrefab = default;
     [SerializeField] private Transform tracksParent = default;
+    [SerializeField] private ScrollRect friendScroll = default;
     [SerializeField] private GameObject friendPrefab = default;
     [SerializeField] private Transform friendsParent = default;
 
@@ -73,6 +76,8 @@ public class UserProfile : MonoBehaviour
         {
             friends[i].gameObject.SetActive(false);
         }
+        trackScroll.ResetScroll();
+        friendScroll.ResetScroll();
     }
 
     public void LoadUser(in UserData data)
@@ -121,6 +126,8 @@ public class UserProfile : MonoBehaviour
 
             friends[i].username.text = (isActive) ? data.Friends[i] : "";
         }
+        trackScroll.ResetScroll();
+        friendScroll.ResetScroll();
     }
 
     public void Hide()
