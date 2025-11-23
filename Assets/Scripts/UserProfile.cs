@@ -65,12 +65,22 @@ public class UserProfile : MonoBehaviour
     {
         title.text = username;
         bio.text = "[No bio added.]";
-        details.text = $"Tracks — 0\nFriends — 0";
         suspendText.text = "";
+
+        int randomSeed = username.GetHashCode();
+        Random.InitState(randomSeed);
+
+        int randTracks = Random.Range(0, 3);
+        details.text = $"Tracks — {randTracks}\nFriends — 0";
 
         for (int i = 0; i < tracks.Count; i++)
         {
             tracks[i].gameObject.SetActive(false);
+        }
+        for (int i = 0; i < randTracks; i++)
+        {
+            tracks[i].gameObject.SetActive(true);
+            tracks[i].SetValues(username, new UserData.UserTrack(SWDatabase.GetRandomTrackName()));
         }
         for (int i = 0; i < friends.Count; i++)
         {

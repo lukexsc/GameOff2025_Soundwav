@@ -24,6 +24,13 @@ public class UserData : ScriptableObject
         [SerializeField] private string trackName;
         [SerializeField] private TrackData data;
 
+        public UserTrack() { }
+
+        public UserTrack(in string trackName)
+        {
+            this.trackName = trackName;
+        }
+
         public bool Randomize => (data == null);
         public string TrackName => (data == null) ? trackName : data.TrackName;
         public TrackData Data => data;
