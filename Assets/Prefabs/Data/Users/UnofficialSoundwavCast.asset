@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
+  m_Name: UnofficialSoundwavCast
+  m_EditorClassIdentifier: 
+  username: UnofficialSoundwavCast
+  suspended: 0
+  bio: Are you looking for news? Drama? Up-and-coming artists? Then you've come to
+    the right place. Lexi and Jay talk every week about the latest and greatest of
+    Soundwav's artists and sometimes insider info on the development of the site
+    itself.
+  friends: []
+  tracks:
+  - trackName: 
+    data: {fileID: 11400000, guid: e4cb0337934171f498d47cdd78361b81, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 7d505a3d00259ef43a3d9a82220ff5e0, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: a7ed0b1e1cc9b6049bb2b2502df58df5, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 24b405beb817de44fb3a943f8a732e4e, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: bffc989d5532c9b44b6e15375d505a77, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 36b45fe0268919549901eab02313c710, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 88137bf3cf668f048b248013593c70e7, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 38bf9d5bbf2ea4e42afb38da2d97506b, type: 2}

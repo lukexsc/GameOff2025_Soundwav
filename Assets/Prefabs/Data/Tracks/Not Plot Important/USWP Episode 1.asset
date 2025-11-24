@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: USWP Episode 1
+  m_EditorClassIdentifier: 
+  trackName: USWP Episode 1 - Overture
+  username: UnofficialSoundwavCast
+  time: 1:12:44
+  description: Welcome to the Unofficial Soundwav Podcast! Lexi and Jay make their
+    introductions and talk about how "Pop Your Bubble" is a bop and the recent flood
+    of copycat artists.
+  comments: []

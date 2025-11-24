@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: USWP Episode 3
+  m_EditorClassIdentifier: 
+  trackName: USWP Episode 3 - Discordant
+  username: UnofficialSoundwavCast
+  time: 1:43:44
+  description: In Episode 3 of the Unofficial Soundwav Podcast Lexi and Jay discuss
+    the drama that hit the site over the last week concerning non-musical content
+    like audio diaries, reveiws, and, yes, podcasts. Are they biased? Obviously,
+    but they're here to talk about it.
+  comments: []

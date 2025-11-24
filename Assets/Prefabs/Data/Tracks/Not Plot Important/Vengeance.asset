@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
-  m_Name: Revenge
+  m_Name: Vengeance
   m_EditorClassIdentifier: 
   trackName: Vengeance
   username: BleakMusic
@@ -34,7 +34,7 @@ MonoBehaviour:
       media, I have a vinyl of their first album. Admittedly, it makes them harder
       to get into, but I appreciate their dedication to the physical medium. But
       their later albums are easier to access, each one "advances" technology forward.
-      "Revenge" was released on CD. I suspect they will post online in their next
+      "Vengeance" was released on CD. I suspect they will post online in their next
       album.
   - username: NotPop
     content: holy shit, dude, it's a comment section not an essay section

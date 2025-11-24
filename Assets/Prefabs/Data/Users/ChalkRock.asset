@@ -10,11 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
-  m_Name: Folkie
+  m_Name: ChalkRock
   m_EditorClassIdentifier: 
-  username: Folkie
+  username: ChalkRock
   suspended: 0
-  bio: 
+  bio: 'he/him
+
+    What''s up! I''m ChalkRock, but you can call me Chalk. Or Rock.
+    Or CR. Or Rocky. Heck, you can call me Shirley. I don''t make music but I love
+    to post about it. Hit me up with any recommendations and I''ll check it out!
+    I love rock, metal, punk, ska, but I''ll listen to anything!'
   friends:
   - BleakMusic
+  - Folkie
+  - Tuotter
   tracks: []
