@@ -28,13 +28,15 @@ MonoBehaviour:
       again or I get a warning.
   - username: Tuotter
     content: I've seen this before. This is when the admin removes something manually.
-      Not sure why it stays, maybe to prevent you from re-uploading it?
+      Not sure why it's listed on your account, maybe to prevent you from re-uploading
+      it?
   - username: ChalkRock
     content: '@Tuottor That''s wild, I didn''t know they did that. Wait so, what
       exactly was the song? @BleakMusic do you know why it was removed.'
   - username: BleakMusic
     content: I have no idea why it'd need to be taken down. Maybe it had something
-      bad in it? I haven't actually listened to it so I'm not sure.
+      offensive in it? Or a copyright issue? I haven't actually listened to it so
+      I'm not sure.
   - username: ChalkRock
     content: How did you not listen to it before uploading?
   - username: BleakMusic
@@ -46,9 +48,9 @@ MonoBehaviour:
   - username: The_Word_Underscore
     content: 'Found another one. Hey, so it looks like the admin is nuking things
       from orbit now. I think they''re friends with the band so they''re removing
-      anything that violates their copyright. Pretty hypocritical since they leave
-      tons of other re-uploads alone.
+      anything that violates their copyright. Pretty hypocritical, they were never
+      this aggressive about re-uploads before.
 
 
-      I posted most of the tracks I found
-      that the admin removed to my account.'
+      I posted most of the tracks
+      I found that the admin removed to my account.'

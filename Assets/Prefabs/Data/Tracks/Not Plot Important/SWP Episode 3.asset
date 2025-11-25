@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
-  m_Name: USWP Episode 3
+  m_Name: SWP Episode 3
   m_EditorClassIdentifier: 
-  trackName: USWP Episode 3 - Discordant
-  username: UnofficialSoundwavCast
+  trackName: SWP Episode 3 - Discordant
+  username: SoundwavPodcast
   time: 1:43:44
-  description: In Episode 3 of the Unofficial Soundwav Podcast Lexi and Jay discuss
-    the drama that hit the site over the last week concerning non-musical content
-    like audio diaries, reveiws, and, yes, podcasts. Are they biased? Obviously,
-    but they're here to talk about it.
+  description: In Episode 3 of the Soundwav Podcast Lexi and Jay discuss the drama
+    that hit the site over the last week concerning non-musical content like audio
+    diaries, reveiws, and, yes, podcasts. Are they biased? Obviously, but they're
+    here to talk about it.
   comments: []

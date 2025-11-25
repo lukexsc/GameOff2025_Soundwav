@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
-  m_Name: UnofficialSoundwavCast
+  m_Name: SoundwavPodcast
   m_EditorClassIdentifier: 
-  username: UnofficialSoundwavCast
+  username: SoundwavPodcast
   suspended: 0
   bio: Are you looking for news? Drama? Up-and-coming artists? Then you've come to
     the right place. Lexi and Jay talk every week about the latest and greatest of

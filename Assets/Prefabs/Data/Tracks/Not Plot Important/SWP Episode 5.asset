@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
-  m_Name: USWP Episode 6
+  m_Name: SWP Episode 5
   m_EditorClassIdentifier: 
-  trackName: USWP Episode 6 - Copyright, Copywrong
-  username: UnofficialSoundwavCast
-  time: 1:00:36
-  description: 'In episode 6 of The Unofficial Soundwav Podcast Lexi and Jay explain
-    the intricacies of copyright law... OK, not really. But they do talk about the
-    thorn issues of samples, plagiarism, inspiration, references, and more. '
+  trackName: SWP Episode 5 - Listener Notes
+  username: SoundwavPodcast
+  time: 1:20:39
+  description: Wow! You sent in so many great comments and questions Lexi and Jay
+    just had to address them. Episode 5 of the Soundwav Podcast is a mailbag episode
+    where we respond to your comments and answer questions you've asked since the
+    podcast started.
   comments: []

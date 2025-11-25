@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
-  m_Name: USWP Episode 1
+  m_Name: SWP Episode 6
   m_EditorClassIdentifier: 
-  trackName: USWP Episode 1 - Overture
-  username: UnofficialSoundwavCast
-  time: 1:12:44
-  description: Welcome to the Unofficial Soundwav Podcast! Lexi and Jay make their
-    introductions and talk about how "Pop Your Bubble" is a bop and the recent flood
-    of copycat artists.
+  trackName: SWP Episode 6 - Copyright, Copywrong
+  username: SoundwavPodcast
+  time: 1:00:36
+  description: 'In episode 6 of The Soundwav Podcast Lexi and Jay explain the intricacies
+    of copyright law... OK, not really. But they do talk about the thorn issues of
+    samples, plagiarism, inspiration, references, and more. '
   comments: []

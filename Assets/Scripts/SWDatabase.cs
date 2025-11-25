@@ -25,7 +25,7 @@ public class SWDatabase : MonoBehaviour
         "RadioKilledTheVideoStar", 
         
         // Plot Important
-        "Admin", "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "UnofficialSoundwavCast",
+        "Admin", "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "SoundwavPodcast",
 
         // References
         "ToddInTheShadows", "TobyFox", 
