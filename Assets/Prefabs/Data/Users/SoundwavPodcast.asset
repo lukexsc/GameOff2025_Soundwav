@@ -18,7 +18,21 @@ MonoBehaviour:
     the right place. Lexi and Jay talk every week about the latest and greatest of
     Soundwav's artists and sometimes insider info on the development of the site
     itself.
-  friends: []
+  friends:
+  - CornyCrown
+  - Djer
+  - Hackley
+  - Harpla
+  - Ierusiwa
+  - LostMedian
+  - Lullatr
+  - MansMusic
+  - RequiemSound
+  - Skunkylind
+  - Tunett
+  - TwilightFire
+  - Udeginn
+  - Vibrate_Peace
   tracks:
   - trackName: 
     data: {fileID: 11400000, guid: e4cb0337934171f498d47cdd78361b81, type: 2}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
+  m_Name: LostMedian
+  m_EditorClassIdentifier: 
+  username: LostMedian
+  suspended: 0
+  bio: This account is a catalogue of songs and audios I like, but also things I
+    can't find anywhere else or that were deleted. Data preservation is a passion
+    of mine. I'm definitely not hoarding files like a dragon. Nope. This will all
+    be useful one day. You'll see. You'll all see! [maniacal laughter]
+  friends:
+  - NoteSerenity
+  - SoundwavPodcast
+  tracks:
+  - trackName: 
+    data: {fileID: 11400000, guid: 23efb3322a0d9bd42af5ef8b6c43661a, type: 2}

@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: SWP PSA
+  m_EditorClassIdentifier: 
+  trackName: PSA - THE SONG
+  username: SoundwavPodcast
+  time: 19:25
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: 'IMPORTANT
+
+    (Updates will be posted in chat)
+
+
+    Lexi here.
+    We don''t normally do this, but this really isn''t normal. There''s a track going
+    around the site that the Admin and moderators are taking down en masse. Please
+    listen for all the details and how you can avoid your account getting taken down,
+    or worse.'
+  comments:
+  - username: Troubadource
+    content: Admin tagged me in to scroll through the site for any re-uploads of
+      the site while they look at the back-end. Please message me if you find anything!
+  - username: CzarCzar
+    content: I don't get what the big deal is. Is the site in legal trouble or something?
+  - username: Pizzicatoty
+    content: Not sure what's going on, but I saw The_Word_Underscore has been adding
+      a bunch of stuff back.
+  - username: Troubadource
+    content: '@NocturneIdol I can see that you uploaded the banned song from your
+      friend The_Word_Underscore, but his account is suspended. Do you know anything
+      about where it came from?'
+  - username: Troubadource
+    content: I've eliminated every copy of the song that I can find and I think I
+      found the source. The earliest upload is from @BleakMusic and metadata from
+      all the reposts I've seen indicates they downloaded it from them.
+  - username: Troubadource
+    content: '@BleakMusic What is this song? Where did you get it? And, importantly,
+      do you still have the file?'
+  - username: BleakMusic
+    content: I don't know what's going on! You seem to have a better idea of what's
+      happening than I do! I have it still, do you want it?
+  - username: Troubadource
+    content: NO! Delete it right now! Defragment your drive too.
+  - username: BleakMusic
+    content: OK OK I will! Look this is all I know. There's a local band I'm a big
+      fan of called Clods of the Valley. They're an kind of indie rock/folk band
+      with a lot of psychedelic/acid rock influnce. They make weird stuff that's
+      really deep and personal. They recently released a new song on their website
+      without much fanfare called "I Don't Miss It". I want to help promote them
+      so I uploaded it to my account as soon as I could.
+  - username: Troubadource
+    content: And you haven't listened to it? You don't know what might be weird about
+      it? What it does to people?
+  - username: Folkie
+    content: Woah woah! What do you mean "what it does to people"? My friend ChalkRock
+      might have listened to it? Is he OK?
+  - username: BleakMusic
+    content: I'm telling you, I didn't listen to it. It's weird they didn't post
+      anything on social media after releasing it. That's something they normally
+      do. And their website seems to be down now. Not sure what happened.
+  - username: Troubadource
+    content: That's probably for the best.
+  - username: Troubadource
+    content: '@Folkie I don''t have specifics, but from what I''ve been reading and
+      hearing from Admin''s couple messages, people seem to have negative reactions
+      to hearing it. Very negative. Sometimes people comment something cryptic or
+      morbid and then log off. Other seem to keysmash and stay online doing nothing.
+      Others, like ChalkRock don''t mention anything. Nobody has heard back from
+      anyone.'
+  - username: Tuottor
+    content: Holy...
+  - username: Troubadource
+    content: The scary thing is, we have no idea how many people could have downloaded
+      it before it got taken off the site. It's popped up enough I'm worried people
+      still have it.
+  - username: Folkie
+    content: Wait a second, how could anyone have downloaded it from Bleak in the
+      first place? Only friends are notified for uploads and I didn't even get in
+      before it happened.
+  - username: Tuottor
+    content: There might be a way. @BleakMusic, is that bot account you found still
+      around?
+  - username: Folkie
+    content: Bot account?
+  - username: Tuottor
+    content: ChalkRock found it a while ago, it had copies of every track Bleak uploaded
+      plus some other, probably from other accounts. It uploaded sometimes minutes
+      after Bleak did so we assumed it was a bot.
+  - username: BleakMusic
+    content: Yeah, it's still around. I assumed Admin was too busy to deal with it
+      at the time.
+  - username: Troubadource
+    content: What is it's name?
+  - username: BleakMusic
+    content: '@NoteSerenity'
+  - username: Folkie
+    content: Sure, but isn't that the same problem? All these tracks were deleted
+      pretty soon after Admin found out. Someone would need to see notifications
+      for the PSA update from SoundwavPodcast AND NoteSerenity.

@@ -9979,6 +9979,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 344f25939c45b1d4bba6d95921efa337, type: 2}
   - {fileID: 11400000, guid: 5631ea84fc4776e42aae1333c699c183, type: 2}
   - {fileID: 11400000, guid: 89743c9cb369af7418a1cfded56ebe48, type: 2}
+  - {fileID: 11400000, guid: 1ec2b93d7f201f341a8bee050120dc7f, type: 2}
+  - {fileID: 11400000, guid: 0b555b49485c91448a18b71e4384eb89, type: 2}
   tracks:
   - {fileID: 11400000, guid: d58e068f82b64dd429a3878bee55d9c6, type: 2}
   - {fileID: 11400000, guid: cca77f0926d6ac747804af81a6d2a896, type: 2}
