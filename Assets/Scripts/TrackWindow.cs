@@ -90,9 +90,8 @@ public class TrackWindow : MonoBehaviour
             comments[i].SetUsername(data.Comments[i].Username);
             comments[i].SetComment(data.Comments[i].Content);
         }
-
-        int randomSeed = (data.Username + data.TrackName).GetHashCode();
-        Random.InitState(randomSeed);
+        
+        Random.InitState(data.GetWaveformHash());
         SetWaveform();
         commentScroll.ResetScroll();
     }

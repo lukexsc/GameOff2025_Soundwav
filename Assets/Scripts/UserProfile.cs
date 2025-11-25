@@ -61,7 +61,7 @@ public class UserProfile : MonoBehaviour
         details.text = $"Tracks — {tracks.Count}\nFriends — {friends.Count}";
     }
 
-    public void RandomUser(in string username)
+    public void RandomUser(in string username, in List<string> friendUsernames)
     {
         title.text = username;
         bio.text = "[No bio added.]";
@@ -86,6 +86,13 @@ public class UserProfile : MonoBehaviour
         {
             friends[i].gameObject.SetActive(false);
         }
+
+        for (int i = 0; i < friendUsernames.Count; i++)
+        {
+            friends[i].gameObject.SetActive(true);
+            friends[i].username.text = friendUsernames[i];
+        }
+
         trackScroll.ResetScroll();
         friendScroll.ResetScroll();
     }

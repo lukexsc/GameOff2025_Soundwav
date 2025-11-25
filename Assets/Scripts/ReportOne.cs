@@ -10,6 +10,8 @@ public class ReportOne : MonoBehaviour
     [SerializeField] private TMP_Text outputText = default;
     [SerializeField] private string correctAnswer = default;
 
+    public bool Open => canvasGroup.interactable;
+
     private void OnValidate()
     {
         if (canvasGroup == null)

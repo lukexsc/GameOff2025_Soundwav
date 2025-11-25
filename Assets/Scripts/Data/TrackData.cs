@@ -9,6 +9,7 @@ public class TrackData : ScriptableObject
     [SerializeField] private string trackName = default;
     [SerializeField] private string username = default;
     [SerializeField] private string time = default;
+    [SerializeField] private OptionalString waveformSeed = default;
     [SerializeField] [TextArea(4, 8)] private string description = default;
     [SerializeField] private Comment[] comments = default;
     
@@ -18,6 +19,15 @@ public class TrackData : ScriptableObject
     public string Description => description;
     public Comment[] Comments => comments;
     
+    public int GetWaveformHash()
+    {
+        if (waveformSeed.Enabled)
+        {
+            return waveformSeed.Value.GetHashCode();
+        }
+        else return (username + TrackName).GetHashCode();
+    }
+
     [System.Serializable]
     public class Comment
     {

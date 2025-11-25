@@ -114,6 +114,7 @@ public abstract class InterfaceField
 [System.Serializable]
 public abstract class OptionalParent { }
 
+[System.Serializable]
 public class Optional<T> : OptionalParent
 {
     [SerializeField] private bool enabled;
@@ -146,6 +147,7 @@ public class Optional<T> : OptionalParent
 
 [System.Serializable] public class OptionalInt : Optional<int> { }
 [System.Serializable] public class OptionalFloat : Optional<float> { }
+[System.Serializable] public class OptionalString : Optional<string> { }
 [System.Serializable] public class OptionalTransform : Optional<Transform> { }
 [System.Serializable] public class OptionalGameObject : Optional<GameObject> { }
 [System.Serializable] public class OptionalVector2 : Optional<Vector2> { }

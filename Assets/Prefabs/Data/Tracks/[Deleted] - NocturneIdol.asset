@@ -15,6 +15,9 @@ MonoBehaviour:
   trackName: '[Deleted]'
   username: NocturneIdol
   time: 4:51
+  waveformSeed:
+    enabled: 1
+    _value: TheSong
   description: '[Deleted for violating Soundwav''s terms of service]'
   comments:
   - username: NocturneIdol

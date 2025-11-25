@@ -13,15 +13,15 @@ public class SoundwavButton : MonoBehaviour
 
     public void OpenSoundwav()
     {
-        mailbox.Hide();
-        report.Hide();
-
-        if (userProfile.Open || trackWindow.Open)
+        if (!mailbox.Open && !report.Open)
         {
             userProfile.Hide();
             trackWindow.Hide();
             userSearch.Search("");
             history.AddUserSearch("");
         }
+
+        mailbox.Hide();
+        report.Hide();
     }
 }

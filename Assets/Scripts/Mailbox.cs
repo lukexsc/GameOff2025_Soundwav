@@ -13,7 +13,9 @@ public class Mailbox : MonoBehaviour
     [SerializeField] private TMP_InputField emailTextSelectable = default;
     [SerializeField] private GameObject emailPrefab = default;
     [SerializeField] private Transform emailParent = default;
-    
+
+    public bool Open => canvasGroup.interactable;
+
     private void OnValidate()
     {
         if (canvasGroup == null)
