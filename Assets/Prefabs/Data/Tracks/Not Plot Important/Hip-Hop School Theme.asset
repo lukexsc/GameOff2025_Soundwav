@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Hip-Hop School Theme
+  m_EditorClassIdentifier: 
+  trackName: Hip-Hop School Theme Song (Full)
+  username: Andanterbli
+  time: 4:22
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: This show seems to be collectively forgotten by the internet, but
+    I have fond memories of it growing up. You didn't see a lot of cartoons with
+    people of color, especially in the 90s. The writing had... issues, but the theme
+    song is apparetnly written by several real hip hop artists in the scene at the
+    time who made it for free and apparently without credit. If anyone knows who
+    worked on this, please let me know.
+  comments:
+  - username: VikingsGenius
+    content: 4 minutes? That's a long opening theme
+  - username: Andanterbli
+    content: It's the full version. They only use the first verse for the real opening,
+      and I found that online. Finding the full version was more involved. I had
+      to track down box set of it (which inexplicably does exist) that had bonus
+      features.
+  - username: Gertsin
+    content: Really, nobody knows who made the song? It wasn't anywhere in the bonus
+      features?
+  - username: Andanterbli
+    content: Sadly, not. It's almost they were embarassed about it.
+  - username: Gertsin
+    content: Huh, that's interesting. Smells like some sort of lost media thing @LostMedian
+      would try and figure out
+  - username: LostMedian
+    content: O.O
+  - username: WCubeSQ
+    content: Honestly, given the moral panic around gangsta rap, I'm surprised this
+      show was made at all.

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: The_Word_Underscore
   suspended: 1
-  bio: Hey admin, if you're going to suspend my account, don't let me edit my account
+  bio: HEY admin, if you're going to suspend my account, don't let me edit my account
     bio. This site is a trainwreck. Anyway, if you're looking for all the tracks
     I uploaded, don't worry. I sent them to my friend Noct. You'll find them there
   friends:

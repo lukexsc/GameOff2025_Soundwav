@@ -38,6 +38,14 @@ public static class Tools
 #endif
     }
 
+    public static void CopyHighlightedText(in TMPro.TMP_InputField inputField)
+    {
+        int start = inputField.selectionAnchorPosition;
+        int end = inputField.selectionFocusPosition;
+        string selectedText = inputField.text.Substring(Mathf.Min(start, end), Mathf.Abs(end - start));
+        GUIUtility.systemCopyBuffer = selectedText;
+    }
+
     /// <summary>
     /// Frame-Independent Exponential Decay
     /// </summary>

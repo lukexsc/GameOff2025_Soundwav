@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
+  m_Name: WCubeSQ
+  m_EditorClassIdentifier: 
+  username: WCubeSQ
+  suspended: 0
+  bio: What's up, I'm WCubeSQ. I sometimes make music for games and other projects
+    I want to do someday, eventually. My stuff isn't free to use, but if you want
+    to use my music just message me.
+  friends:
+  - Andanterbli
+  - Gertsin
+  - KittyOstinato
+  - LostMedian
+  - Utopyruff
+  - VikingsGenius
+  tracks:
+  - trackName: 
+    data: {fileID: 11400000, guid: f39e54a0c5e26e34caf2383ccfe7e713, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: f5ec1ea63bcfabb4693cb98de6ed2ceb, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 94abd9ddb0dc73f4389461c57b86887e, type: 2}
+  - trackName: 
+    data: {fileID: 11400000, guid: 07cadfad201c5bc4ea902e10cf3b692f, type: 2}

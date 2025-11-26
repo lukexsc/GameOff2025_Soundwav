@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: The Future We Wanted
+  m_EditorClassIdentifier: 
+  trackName: The Future We Wanted
+  username: KittyOstinato
+  time: 2:58
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: "\r~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~\nSo this is the first song I'm
+    posting here that I both wrote and sang and I'm extremely nervous. Be nice to
+    meeeeee\n~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~"
+  comments:
+  - username: VikingsGenius
+    content: You did a great job on this K, no need to be nervous.
+  - username: KittyOstinato
+    content: T_T thank you
+  - username: Andanterbli
+    content: I will also hasten to assure you that this is great. It's frankly more
+      polished than I was expecting, and you always go the extra mile to make things
+      aesthetically pleasing. Your lyrics are evocative and your voice is clear and
+      easy to understand. What inspired the lyrics?
+  - username: LostMedian
+    content: Oh man, I teared up a little.
+  - username: KittyOstinato
+    content: You're all so nice!
+  - username: KittyOstinato
+    content: This song is really about this story I've had in my head for a while.
+      It's the end of the world, or, well it's kind of not clear, but this couple
+      is there at then end looking back on everything. They're not perfect for each
+      other, and they know it, but they love each other and wish they could share
+      the future together but it no longer exists.
+  - username: Andanterbli
+    content: That's interesting. I picked up on the apocalyptic themes but I didn't
+      think they were that literal. I enjoyed the interpretation of this being a
+      sad, but mutual breakup.
+  - username: KittyOstinato
+    content: That's totally a valid interpretation! Like I said, I didn't really
+      see it as a super literal world ending, but definitely more of a Bad Thing
+      going on in the world. Something inevitable.
+  - username: KittyOstinato
+    content: It's the sort of dramatic scene I love and would love to act out someday.
+  - username: WCubeSQ
+    content: Late to the party, but you did amazing. Someday we need to collaborate
+      on something
+  - username: KittyOstinato
+    content: <3 <3 <3 we should!

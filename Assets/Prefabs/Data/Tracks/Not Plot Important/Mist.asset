@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Mist
+  m_EditorClassIdentifier: 
+  trackName: Mist
+  username: WCubeSQ
+  time: 4:01
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: I wanted to make something to play in the background when I'm running
+    my campaign. I tried to find anything that had a creepy fairytale vibe but couldn't
+    find anything that I liked. I might make a longer version since it's a bit short
+    to loop during a game.
+  comments:
+  - username: VikingsGenius
+    content: Good composition! I get that you want it to be a bit longer so it doesn't
+      get stale or repetative, but the transition in the loop is really smooth and
+      I feel like it's the perfect length right now.
+  - username: Andanterbli
+    content: Oh cool, I didn't know you were running a D&D campaign. Looking for
+      any players?
+  - username: WCubeSQ
+    content: '@VikingsGenius I really appreciate the praise, especially coming from
+      you. I''ll have to see how it sounds in the moment and if I need to vary it.
+      I might just right more music for different situations, but that seems like
+      a lot of work'
+  - username: WCubeSQ
+    content: '@Andanterbli It''s Pathfinder actually. And unfortunately I''m already
+      running for six, adding someone else in at this point in the campaign would
+      be a huge hassle.'
+  - username: Andanterbli
+    content: lol that's fair, I knew it was a bit of a long shot.
+  - username: Andanterbli
+    content: If you ever need people for a one-shot or another game just know I'm
+      down whenever
+  - username: WCubeSQ
+    content: Heard. You'll be on the short list.

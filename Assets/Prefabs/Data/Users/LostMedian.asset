@@ -19,8 +19,14 @@ MonoBehaviour:
     of mine. I'm definitely not hoarding files like a dragon. Nope. This will all
     be useful one day. You'll see. You'll all see! [maniacal laughter]
   friends:
+  - Andanterbli
+  - Gertsin
+  - KittyOstinato
   - NoteSerenity
   - SoundwavPodcast
+  - Utopyruff
+  - VikingsGenius
+  - WCubeSQ
   tracks:
   - trackName: 
     data: {fileID: 11400000, guid: 23efb3322a0d9bd42af5ef8b6c43661a, type: 2}

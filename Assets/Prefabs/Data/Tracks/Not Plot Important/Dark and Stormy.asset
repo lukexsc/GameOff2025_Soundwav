@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Dark and Stormy
+  m_EditorClassIdentifier: 
+  trackName: Dark and Stormy
+  username: WCubeSQ
+  time: 5:51
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: Long ambient track. I made this for a short film I want to make. The
+    vibe is ominous with a sort of "medieval" feel.
+  comments:
+  - username: Andanterbli
+    content: I like the atmosphere this creates. Tell me about this short film.
+  - username: KittyOstinato
+    content: OOooooooOOOOooOO spooky
+  - username: WCubeSQ
+    content: Thank you. As for the short film, I'm about halfway through the screenplay
+      and I'm dealing with some writers block. Honestly, I made this to procrastinate
+      on it. The idea is that it starts as a gothic horror plot, people acting strange,
+      dark shadows, and lots of mirrors. The plot revolves around friends exploring
+      this old house and going in literal mirror universes. But I'm having trouble
+      ending the story.
+  - username: Andanterbli
+    content: That's a very ambitious idea, but I like the premise. Have you made
+      a short film like this before?
+  - username: WCubeSQ
+    content: To be honest, I haven't, but I want to give it a shot. I have a friend
+      with a lot of film equipment who works in film so I was going to get her help.
+  - username: LostMedian
+    content: That sounds awesome! This song definitely fits that mirror vibe too.
+      Can I read the script?
+  - username: WCubeSQ
+    content: Thanks Lost, but it's still an early draft so I'm not confident enough
+      to show it to anybody.

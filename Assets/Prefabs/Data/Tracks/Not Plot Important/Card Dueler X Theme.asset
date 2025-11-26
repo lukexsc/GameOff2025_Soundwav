@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Card Dueler X Theme
+  m_EditorClassIdentifier: 
+  trackName: Card Dueler X Theme Song
+  username: Andanterbli
+  time: 1:33
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: I can find posts of the original series everywhere but nobody seems
+    to have posted the sequel series anywhere. For as mid as this series was, the
+    OP was honestly way too good.
+  comments:
+  - username: KittyOstinato
+    content: This is so nostalgic, I love it.
+  - username: LostMedian
+    content: YES, CDX was my favorite growing up. Thank you for your service to the
+      preservation of art!
+  - username: LostMedian
+    content: Hey, what do you mean "mid" CDX was so much cooler than CD
+  - username: Andanterbli
+    content: You are entitled to your opinion. But I liked how the original show
+      was more willing to do dark plots and put the characters in danger. For all
+      the "cool" aesthetic added in X it all felt really shallow.
+  - username: Andanterbli
+    content: Also I didn't appreciate it at the time, but the fact the dub editted
+      the original to replace all the gay relationships with het ones is really blantant
+      in hindsight. It literally creates plot holes.
+  - username: Gertsin
+    content: Growing up I definitely didn't hate it, but I think the theme song might
+      have been why
+  - username: Gertsin
+    content: There was actually a lot of great music through X, actually. The battle
+      theme was overused but good. And whenever it tried for a sad moment that string
+      number was more effective than the writing ever was.
+  - username: KittyOstinato
+    content: '@Getsin, you''re totally right. @Andanterbli any chance you could upload
+      one of those?'
+  - username: Andanterbli
+    content: I'll add them to The List.
+  - username: LostMedian
+    content: You all just lack good taste for saturday morning cartoons/anime

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  trackName: Test
+  username: Gertsin
+  time: 2:51
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: I'm not really a music person, but I've been studying up on music
+    theory for whatever reason so I wanted to try something out.
+  comments:
+  - username: KittyOstinato
+    content: This is really good!
+  - username: Gertsin
+    content: Thanks, Kitty
+  - username: VikingsGenius
+    content: Nice work, G! Are you looking for feedback at all, or are you just learning
+      at your own pace? Obviously, I'm in a band, so I know a little bit of music
+      theory (didn't study it either, but you know).
+  - username: Gertsin
+    content: '@VikingsGenius Hit me'
+  - username: VikingsGenius
+    content: 'I think you did a good job for a first time, there''s nothing obviously
+      clashing, but I''d change a few things
+
+
+      1) I think the mastering could
+      be a bit better. Especially the volume of the relative tracks. The percussion
+      is really loud and I think one guitar is quieter than the other.
+
+
+      2)
+      You have a lot of different ideas fit into this. And that''s good! Having different
+      melodies is a great way to build out songs, but this is a lot. Save those hooks
+      for other tracks and build off them
+
+
+      3) Hand in hand with #2 I think
+      you''re a bit afraid of repeating yourself, but songs are all about verse chorus
+      verse chorus (at least pop songs are). I''d like a bit more structure. Combine
+      elements together to keep interest but work with fewer pieces.'
+  - username: Gertsin
+    content: Thanks, I'll try to keep that all in mind

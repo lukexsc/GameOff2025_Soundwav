@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a6b4be200fa9c64787418db97ecc694, type: 3}
+  m_Name: VikingsGenius
+  m_EditorClassIdentifier: 
+  username: VikingsGenius
+  suspended: 0
+  bio: 'We''re VikingsGenius, an indie math rock band (it''s not as nerdy as it sounds...
+    but it''s still pretty nerdy). We hail from the northest USA and sometimes do
+    shows. Follow us for updates on that on our other socials. If you like geeking
+    out over complicated compositions that sound awesome, you''ve come to the right
+    place.
+
+
+    (If you see me in comments it''s probably me, Todd, one of the guitarists)'
+  friends:
+  - Andanterbli
+  - Gertsin
+  - KittyOstinato
+  - LostMedian
+  - Utopyruff
+  - WCubeSQ
+  tracks:
+  - trackName: The King of Carcosa
+    data: {fileID: 0}
+  - trackName: Tapestry
+    data: {fileID: 0}
+  - trackName: Hold A Candle
+    data: {fileID: 0}
+  - trackName: Resident 112
+    data: {fileID: 0}
+  - trackName: Transcendental
+    data: {fileID: 0}
+  - trackName: Shepherd Tone
+    data: {fileID: 0}

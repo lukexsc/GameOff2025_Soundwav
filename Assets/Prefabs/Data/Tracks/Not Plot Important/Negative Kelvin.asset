@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Negative Kelvin
+  m_EditorClassIdentifier: 
+  trackName: Negative Kelvin
+  username: WCubeSQ
+  time: 3:19
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: This is a track a college friend commissioned me to make for one of
+    their personal projects. I'll link it when he's done with it, but I was given
+    the prompt of "cyberpunk antarctica" which inspired me to make this. Synths and
+    electronic sounds aren't my forte but I like how it turned out.
+  comments:
+  - username: Utopyruff
+    content: Really like how unique it is. What project is this for? is it online?
+      Can you link it?
+  - username: Utopyruff
+    content: Wait never mind, I just read the description lol
