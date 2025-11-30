@@ -15,5 +15,6 @@ MonoBehaviour:
   username: Kiazhit
   suspended: 0
   bio: 
-  friends: []
+  friends:
+  - HACKER
   tracks: []

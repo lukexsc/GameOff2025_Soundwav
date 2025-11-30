@@ -20,9 +20,13 @@ public class UserProfile : MonoBehaviour
 
     private List<TrackLink> tracks;
     private List<UserSearchResult> friends;
+    private int glitchedIndex = -1;
+    private float glitchCounter;
 
     private const int TRACKS_COUNT = 12;
     private const int FRIENDS_COUNT = 12;
+    private const float GLITCH_TIME = 0.11f;
+    private const int GLITCH_LENGTH = 15;
 
     private const string SUSPEND_TEXT = "[This account is suspended]";
 
@@ -63,6 +67,7 @@ public class UserProfile : MonoBehaviour
 
     public void RandomUser(in string username, in List<string> friendUsernames)
     {
+        glitchedIndex = -1;
         title.text = username;
         bio.text = "[No bio added.]";
         suspendText.text = "";
@@ -97,6 +102,19 @@ public class UserProfile : MonoBehaviour
         friendScroll.ResetScroll();
     }
 
+    private void Update()
+    {
+        if (glitchedIndex < 0) return;
+
+        glitchCounter += Time.deltaTime;
+        
+        if (glitchCounter > GLITCH_TIME)
+        {
+            glitchCounter -= GLITCH_TIME;
+            friends[glitchedIndex].username.text = Tools.GetGlitchString(GLITCH_LENGTH);
+        }
+    }
+
     public void LoadUser(in UserData data)
     {
         if (data.Tracks.Length > tracks.Count)
@@ -123,6 +141,7 @@ public class UserProfile : MonoBehaviour
             }
         }
 
+        glitchedIndex = -1;
         title.text = data.Username;
         bio.text = data.Bio;
         details.text = $"Tracks — {data.Tracks.Length}\nFriends — {data.Friends.Length}";
@@ -142,6 +161,10 @@ public class UserProfile : MonoBehaviour
             friends[i].gameObject.SetActive(isActive);
 
             friends[i].username.text = (isActive) ? data.Friends[i] : "";
+
+            // Glitched User
+            friends[i].glitched = isActive && data.Friends[i].Equals(SWDatabase.HACKER_TAG);
+            glitchedIndex = (friends[i].glitched) ? i : glitchedIndex;
         }
         trackScroll.ResetScroll();
         friendScroll.ResetScroll();

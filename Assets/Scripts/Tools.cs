@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 
 public static class Tools
 {
@@ -44,6 +45,20 @@ public static class Tools
         int end = inputField.selectionFocusPosition;
         string selectedText = inputField.text.Substring(Mathf.Min(start, end), Mathf.Abs(end - start));
         GUIUtility.systemCopyBuffer = selectedText;
+    }
+
+    private static readonly char[] GLITCH_CHARACTERS = new char[] {
+        '!', '@', '#', '$', '%', '&', '(', ')', '[', ']', '-', '+', '=', '<', '>', '?', '¶', '±', '¢', '½', '¼', '¥', '£', '«', '»', '§', '¿'
+    };
+
+    public static string GetGlitchString(in int length)
+    {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < length; i++)
+        {
+            sb.Append(GLITCH_CHARACTERS[Random.Range(0, GLITCH_CHARACTERS.Length)]);
+        }
+        return sb.ToString();
     }
 
     /// <summary>

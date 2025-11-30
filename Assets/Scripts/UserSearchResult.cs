@@ -7,9 +7,17 @@ public class UserSearchResult : MonoBehaviour
     [SerializeField] private SWDatabase database = default;
 
     public TMPro.TMP_Text username = default;
+    [HideInInspector] public bool glitched = default;
 
     public void UIOpen()
     {
-        database.OpenUser(username.text);
+        if (glitched) // Hacked User
+        {
+            database.OpenGlichedUser();
+        }
+        else // Normal User
+        {
+            database.OpenUser(username.text);
+        }
     }
 }

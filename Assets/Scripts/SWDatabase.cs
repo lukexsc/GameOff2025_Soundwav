@@ -9,6 +9,7 @@ public class SWDatabase : MonoBehaviour
     [SerializeField] private UserProfile userProfile = default;
     [SerializeField] private TrackWindow trackWindow = default;
     [SerializeField] private Mailbox mailbox = default;
+    [SerializeField] private GlitchedProfile glitchedProfile = default;
 
     [Header("Users")]
     [SerializeField] private UserData[] users = default;
@@ -25,7 +26,7 @@ public class SWDatabase : MonoBehaviour
         "RadioKilledTheVideoStar", 
         
         // Plot Important
-        "Admin", "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "SoundwavPodcast",
+        "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "SoundwavPodcast",
 
         "NoteSerenity", "CzarCzar", "Pizzicatoty", "LostMedian", "Andanterbli", "Gertsin", "KittyOstinato", "Utopyruff", "VikingsGenius", "WCubeSQ", "Kiazhit",
 
@@ -39,8 +40,18 @@ public class SWDatabase : MonoBehaviour
         "Unofficials", "StarmindUnofficial", "TokenPodcast", "Sound_Off_Podcast", "UnsoundUnofficial", "OfficialSoundless", "MagicCast", "2Sound2Wav", "WavSound", "TheBeatPodcast", "Padcoster", "PodcastPop", "TheFourFourCast", "OceanWavs", "IHauntSoundwav", "SoundwavCringe", "BestOfSoundwav", "OnlyOnSoundwav", "UnofficialSymphony", "SoulOfSoundwav", "SourcePodcast",
 
         // Hiding Lost Media
-        "FoundAndLost", "LostAtSea", "WhaleMedia", "MediaMessage", "Not_Lost", "PoolsideMedia", "ObscureMedia", "MediaFort"
+        "FoundAndLost", "LostAtSea", "WhaleMedia", "MediaMessage", "Not_Lost", "PoolsideMedia", "ObscureMedia", "MediaFort",
+
+        // Private User
+        "Admin", "AniLog", "Articlent", "Autam", "Boakl", "Bobette", "Buddybion", "Bugspina", "Dailiesol", "Fdsacom", "GuruCrunch", "Headeria", "Kinonf", "Miraclecara", "MitziBeat", "PlatinumSpin", "ReptileKnot", "Sablinestr", "Shangin", "SlyIon", "SparklingHappy", "Sterer", "ThenornDarth", "VibrantPrime", "WardSlip", "WellKatr", "Wixonixto", "WonderSmarter", "ZeeWs", "Adquire", "Borgen", "CrazyRecipe", "Earst", "Gaffarm", "Grimeldo", "Iffyns", "Intervient", "Iqurage", "JungLucky", "Krpline", "Ledgerra", "LeventisIam", "Luntzer", "Majesis", "MansCrazy", "Medialter", "MilkZin", "Mixerio", "Odshemi", "RecipeBigg", "Slayrinon", "SpecialNeo", "Stonelliw", "Trackerca", "Twinklet", "Ulrikalth", "Userney", "Wabbline"
     };
+
+    public static readonly HashSet<string> PRIVATE_USERS = new HashSet<string>
+    {
+        "Admin", "AniLog", "Articlent", "Autam", "Boakl", "Bobette", "Buddybion", "Bugspina", "Dailiesol", "Fdsacom", "GuruCrunch", "Headeria", "Kinonf", "Miraclecara", "MitziBeat", "PlatinumSpin", "ReptileKnot", "Sablinestr", "Shangin", "SlyIon", "SparklingHappy", "Sterer", "ThenornDarth", "VibrantPrime", "WardSlip", "WellKatr", "Wixonixto", "WonderSmarter", "ZeeWs", "Adquire", "Borgen", "CrazyRecipe", "Earst", "Gaffarm", "Grimeldo", "Iffyns", "Intervient", "Iqurage", "JungLucky", "Krpline", "Ledgerra", "LeventisIam", "Luntzer", "Majesis", "MansCrazy", "Medialter", "MilkZin", "Mixerio", "Odshemi", "RecipeBigg", "Slayrinon", "SpecialNeo", "Stonelliw", "Trackerca", "Twinklet", "Ulrikalth", "Userney", "Wabbline"
+    };
+
+    public const string HACKER_TAG = "HACKER";
 
     private static readonly List<string> GENERIC_TRACKS = new List<string>
     {
@@ -61,6 +72,7 @@ public class SWDatabase : MonoBehaviour
     {
         userProfile.Show();
         trackWindow.Hide();
+        glitchedProfile.Hide();
         Optional<UserData> user = FindUser(username);
 
         if (user.Enabled)
@@ -78,6 +90,7 @@ public class SWDatabase : MonoBehaviour
     public void OpenTrack(in string username, in string trackName)
     {
         trackWindow.Show();
+        glitchedProfile.Hide();
         Optional<TrackData> track = FindTrack(username, trackName);
 
         if (track.Enabled)
@@ -104,6 +117,7 @@ public class SWDatabase : MonoBehaviour
 
     public void LoadHistory(in SWHistory.GameState backState)
     {
+        glitchedProfile.Hide();
         if (backState.window == SWHistory.Window.UserSearch)
         {
             userProfile.Hide();
@@ -144,6 +158,12 @@ public class SWDatabase : MonoBehaviour
             }
         }
         return friendList;
+    }
+
+    public void OpenGlichedUser()
+    {
+        glitchedProfile.LoadGlitchedUser();
+        history.AddUser("HACKER");
     }
 
     // Private Methods

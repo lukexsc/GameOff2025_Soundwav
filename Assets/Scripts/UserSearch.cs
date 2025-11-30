@@ -39,7 +39,7 @@ public class UserSearch : MonoBehaviour
             results.Add(result);
         }
 
-        resultText.text = $"{results.Count} users";
+        Search("");
     }
 
     private void Update()
@@ -61,21 +61,40 @@ public class UserSearch : MonoBehaviour
         searchBar.text = searchPhrase;
         if (searchPhrase.Trim().Length <= 0) // Show All Users
         {
+            bool notPrivate = false;
+            int count = 0;
             foreach (UserSearchResult result in results)
             {
-                result.gameObject.SetActive(true);
+                notPrivate = !SWDatabase.PRIVATE_USERS.Contains(result.username.text);
+                result.gameObject.SetActive(notPrivate);
+                count += (notPrivate) ? 1 : 0;
             }
-            resultText.text = $"{results.Count} users";
+            resultText.text = $"{count} users";
+        }
+        else if (searchPhrase.Length >= 3 && (searchPhrase[0] == '$' & searchPhrase[1] == '{' & searchPhrase[2] == '}')) // Search Even Private Users
+        {
+            string trimSearchPhrase = searchPhrase.Substring(3, searchPhrase.Length - 3);
+            int count = 0;
+            bool containsPhrase = false;
+            foreach (UserSearchResult result in results)
+            {
+                containsPhrase = result.username.text.Contains(trimSearchPhrase, System.StringComparison.CurrentCultureIgnoreCase);
+                result.gameObject.SetActive(containsPhrase);
+                count += (containsPhrase) ? 1 : 0;
+            }
+            resultText.text = $"{count} users containing \"{trimSearchPhrase}\"";
         }
         else // Search for specific user
         {
             int count = 0;
             bool containsPhrase = false;
+            bool notPrivate = false;
             foreach (UserSearchResult result in results)
             {
+                notPrivate = !SWDatabase.PRIVATE_USERS.Contains(result.username.text);
                 containsPhrase = result.username.text.Contains(searchPhrase, System.StringComparison.CurrentCultureIgnoreCase);
-                result.gameObject.SetActive(containsPhrase);
-                count += (containsPhrase) ? 1 : 0;
+                result.gameObject.SetActive(containsPhrase & notPrivate);
+                count += (containsPhrase & notPrivate) ? 1 : 0;
             }
             resultText.text = $"{count} users containing \"{searchPhrase}\"";
         }
