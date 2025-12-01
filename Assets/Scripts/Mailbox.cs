@@ -13,6 +13,8 @@ public class Mailbox : MonoBehaviour
     [SerializeField] private TMP_InputField emailTextSelectable = default;
     [SerializeField] private GameObject emailPrefab = default;
     [SerializeField] private Transform emailParent = default;
+    [SerializeField] private CanvasGroup gameEndButton = default;
+    [SerializeField] private TrackPlayer trackPlayer = default;
 
     public bool Open => canvasGroup.interactable;
 
@@ -27,6 +29,7 @@ public class Mailbox : MonoBehaviour
     private void Start()
     {
         Show();
+        gameEndButton.SetFullVisibility(false);
     }
 
     public void AddEmail(in EmailData data, in int index)
@@ -39,11 +42,20 @@ public class Mailbox : MonoBehaviour
         emailObj.SetActive(true);
     }
 
+    public void ClearEmail()
+    {
+        emailText.text = "";
+        emailTextSelectable.text = "";
+        textScroll.ResetScroll();
+        gameEndButton.SetFullVisibility(false);
+    }
+
     public void LoadEmail(in EmailData data)
     {
         emailText.text = data.Content;
         emailTextSelectable.text = data.Content;
         textScroll.ResetScroll();
+        gameEndButton.SetFullVisibility(data.GameEndLink);
     }
 
     public void Hide()
@@ -56,5 +68,10 @@ public class Mailbox : MonoBehaviour
     {
         canvasGroup.SetFullVisibility(true);
         backbutton.SetFullVisibility(false);
+    }
+
+    public void UIEndTheGame()
+    {
+        trackPlayer.Activate(TrackPlayer.Option.credits);
     }
 }

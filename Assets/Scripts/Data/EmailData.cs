@@ -8,9 +8,11 @@ public class EmailData : ScriptableObject
 {
     [SerializeField] private string sender = default;
     [SerializeField] private string subject = default;
+    [SerializeField] private bool gameEndLink = default;
     [SerializeField] [TextArea(32, 48)] private string content = default;
 
     public string Sender => sender;
     public string Subject => subject;
+    public bool GameEndLink => gameEndLink;
     public string Content => content;
 }

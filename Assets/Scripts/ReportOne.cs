@@ -9,6 +9,9 @@ public class ReportOne : MonoBehaviour
     [SerializeField] private TMP_InputField answerInput = default;
     [SerializeField] private TMP_Text outputText = default;
     [SerializeField] private string correctAnswer = default;
+    [SerializeField] private Mailbox mail = default;
+    [SerializeField] private SWDatabase database = default;
+    [SerializeField] private GameObject reportButton = default;
 
     public bool Open => canvasGroup.interactable;
 
@@ -24,6 +27,15 @@ public class ReportOne : MonoBehaviour
     {
         bool isCorrect = correctAnswer.Equals(answerInput.text, System.StringComparison.CurrentCultureIgnoreCase);
         outputText.text = (isCorrect) ? "Correct!" : "Incorrect";
+
+        if (isCorrect)
+        {
+            mail.Show();
+            mail.ClearEmail();
+            Hide();
+            database.AddEmail(1);
+            reportButton.SetActive(false);
+        }
     }
 
     public void Hide()

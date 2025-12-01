@@ -91,8 +91,15 @@ public class TrackWindow : MonoBehaviour
             comments[i].SetComment(data.Comments[i].Content);
         }
         
-        Random.InitState(data.GetWaveformHash());
-        SetWaveform();
+        if (data.IsWaveformBlank)
+        {
+            SetWaveformBlank();
+        }
+        else
+        {
+            Random.InitState(data.GetWaveformHash());
+            SetWaveform();
+        }
         commentScroll.ResetScroll();
     }
 
@@ -114,6 +121,14 @@ public class TrackWindow : MonoBehaviour
             height = Random.value * WAVE_MAX_HEIGHT;
             height = Mathf.Max(WAVE_MIN_HEIGHT, height);
             line.sizeDelta = new Vector2(line.sizeDelta.x, height);
+        }
+    }
+
+    private void SetWaveformBlank()
+    {
+        foreach (RectTransform line in waveformLines)
+        {
+            line.sizeDelta = new Vector2(line.sizeDelta.x, WAVE_MIN_HEIGHT);
         }
     }
 }

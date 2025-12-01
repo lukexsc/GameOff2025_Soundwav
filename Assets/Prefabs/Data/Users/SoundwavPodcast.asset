@@ -31,7 +31,6 @@ MonoBehaviour:
   - Skunkylind
   - TwilightFire
   - Udeginn
-  - Vibrate_Peace
   tracks:
   - trackName: 
     data: {fileID: 11400000, guid: e4cb0337934171f498d47cdd78361b81, type: 2}

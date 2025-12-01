@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: First
+  m_EditorClassIdentifier: 
+  trackName: First
+  username: Admin
+  time: 3:39
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: I know no one will see this, but uploading some random audio file
+    as the first song on the site didn't sit well with me, hence this. Passion for
+    music doesn't translate into skill and it especially didn't when I wrote this
+    in college. It's not perfect but neither is this site. If I'm expecting people
+    to share their art, I should act first, even behind the scenes.
+  comments: []

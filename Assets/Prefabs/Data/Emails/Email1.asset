@@ -14,32 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sender: jim@dhs.gov
   subject: Investigation
-  content: 'I need you to investigate a lead into Senator Smith''s death.
+  gameEndLink: 0
+  content: 'A VIP has been murdered. I need you to investigate a lead.
 
 
-    The
-    autopsy is still pending, but we believe it was made to look like a suicide.
-    The senator''s computer had an unmarked compact disk. The contents were corrupted,
-    but we were able to determine It contained one file: revenge.wav
+    Details
+    are strictly need-to-know and the autopsy is pending, but we believe it was made
+    to look like a suicide. Prior to their death, the victim opened a message on
+    their computer. The contents were corrupted after the fact, but we were able
+    to determine It contained one file: listen.wav
 
 
-    The file''s
-    metadata referenced a website known as Soundwav.com which went offline less than
-    a week ago, taking all of its files with it.
+    The file''s metadata referenced
+    a website known as Soundwav.com which went offline less than a week ago, taking
+    all of its files with it.
 
 
-    This is too specific to be
-    a coincidence.
+    This is too specific to be a coincidence.
 
 
-    We''ve provided an archived copy of the site. You need to
-    find who sent the file.
+    We''ve
+    provided an archived copy of the site. You need to find who sent the message.
 
 
-    From what was recovered, the file''s author is
-    "BleakMusic" but anyone could have downloaded it.
+    From
+    what was recovered, the file''s author is "BleakMusic" but anyone could have
+    downloaded it.
 
 
-    Because an account is
-    needed to download files, the our suspect must have an account on this site.
-    Find their username and send it to me. I''ll take care of the rest.'
+    Because an account is needed to download files, the our
+    suspect must have an account on this site. Find their username and send it to
+    me. I''ll take care of the rest.
+
+
+    Jim'

@@ -26,9 +26,9 @@ public class SWDatabase : MonoBehaviour
         "RadioKilledTheVideoStar", 
         
         // Plot Important
-        "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "SoundwavPodcast",
+        "BleakMusic", "ChalkRock", "Folkie", "NotPop", "Tuotter", "The_Word_Underscore", "NocturneIdol", "Troubadource", "SoundwavPodcast", "Kiazhit", "RollReversal", "Poxel",
 
-        "NoteSerenity", "CzarCzar", "Pizzicatoty", "LostMedian", "Andanterbli", "Gertsin", "KittyOstinato", "Utopyruff", "VikingsGenius", "WCubeSQ", "Kiazhit",
+        "NoteSerenity", "CzarCzar", "Pizzicatoty", "LostMedian", "Andanterbli", "Gertsin", "KittyOstinato", "Utopyruff", "VikingsGenius", "WCubeSQ", "Mechang", "PauseNess", "Popek", "ThrenodySkater",
 
         // References
         "ToddintheShadows", "TobyFox", 
@@ -48,7 +48,7 @@ public class SWDatabase : MonoBehaviour
 
     public static readonly HashSet<string> PRIVATE_USERS = new HashSet<string>
     {
-        "Admin", "AniLog", "Articlent", "Autam", "Boakl", "Bobette", "Buddybion", "Bugspina", "Dailiesol", "Fdsacom", "GuruCrunch", "Headeria", "Kinonf", "Miraclecara", "MitziBeat", "PlatinumSpin", "ReptileKnot", "Sablinestr", "Shangin", "SlyIon", "SparklingHappy", "Sterer", "ThenornDarth", "VibrantPrime", "WardSlip", "WellKatr", "Wixonixto", "WonderSmarter", "ZeeWs", "Adquire", "Borgen", "CrazyRecipe", "Earst", "Gaffarm", "Grimeldo", "Iffyns", "Intervient", "Iqurage", "JungLucky", "Krpline", "Ledgerra", "LeventisIam", "Luntzer", "Majesis", "MansCrazy", "Medialter", "MilkZin", "Mixerio", "Odshemi", "RecipeBigg", "Slayrinon", "SpecialNeo", "Stonelliw", "Trackerca", "Twinklet", "Ulrikalth", "Userney", "Wabbline"
+        "Admin", "AniLog", "Articlent", "Autam", "Boakl", "Bobette", "Buddybion", "Bugspina", "Dailiesol", "Fdsacom", "GuruCrunch", "Headeria", "Kinonf", "Miraclecara", "MitziBeat", "PlatinumSpin", "ReptileKnot", "Sablinestr", "Shangin", "SlyIon", "SparklingHappy", "Sterer", "ThenornDarth", "VibrantPrime", "WardSlip", "WellKatr", "Wixonixto", "WonderSmarter", "ZeeWs", "Adquire", "Borgen", "CrazyRecipe", "Earst", "Gaffarm", "Grimeldo", "Iffyns", "Intervient", "Iqurage", "JungLucky", "Krpline", "Ledgerra", "LeventisIam", "Luntzer", "Majesis", "MansCrazy", "Medialter", "MilkZin", "Mixerio", "Odshemi", "RecipeBigg", "Slayrinon", "SpecialNeo", "Stonelliw", "Trackerca", "Twinklet", "Ulrikalth", "Userney", "Wabbline", "RollReversal", "Poxel"
     };
 
     public const string HACKER_TAG = "HACKER";
