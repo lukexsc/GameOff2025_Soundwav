@@ -14,7 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: RollReversal
   suspended: 0
-  bio: '[No bio added.]'
+  bio: 'cowboy advice:
+
+    1. be rootin
+
+    2. be tootin
+
+    3. and by god be
+    shootin
+
+    but most of all
+
+    <i>be kind<i>'
   friends:
   - Kiazhit
   - Mechang

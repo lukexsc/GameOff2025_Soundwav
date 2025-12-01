@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: Mechang
   suspended: 0
-  bio: '[No bio added.]'
+  bio: Information wants to be free, but for nine easy payments of $39.99 it could
+    be yours!
   friends:
   - Kiazhit
   - PauseNess

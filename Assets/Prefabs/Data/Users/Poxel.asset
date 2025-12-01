@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: Poxel
   suspended: 0
-  bio: '[No bio added.]'
+  bio: This world is imperfect
   friends:
   - Kiazhit
   - Mechang
@@ -22,4 +22,6 @@ MonoBehaviour:
   - Popek
   - RollReversal
   - ThrenodySkater
-  tracks: []
+  tracks:
+  - trackName: 
+    data: {fileID: 11400000, guid: 334f64683f2a4dc4ebe6f8f5d00d42e7, type: 2}

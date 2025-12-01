@@ -28,6 +28,7 @@ public class CreditsMenu : MonoBehaviour
         {
             done = true;
             credits.SetFullVisibility(true);
+            AudioController.instance.PlayMusic();
         }
         else if (counter > WAIT_TIME)
         {
@@ -37,11 +38,13 @@ public class CreditsMenu : MonoBehaviour
 
     public void UIMainMenu()
     {
+        AudioController.instance.PlayEffectClick();
         UnityEngine.SceneManagement.SceneManager.LoadScene(MAIN_MENU_SCENE);
     }
 
     public void UIQuitGame()
     {
+        AudioController.instance.PlayEffectClick();
         Application.Quit();
     }
 }

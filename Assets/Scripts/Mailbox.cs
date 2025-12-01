@@ -74,4 +74,9 @@ public class Mailbox : MonoBehaviour
     {
         trackPlayer.Activate(TrackPlayer.Option.credits);
     }
+
+    public void UIPlayEffectClick()
+    {
+        AudioController.instance.PlayEffectClick();
+    }
 }

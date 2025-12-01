@@ -56,8 +56,10 @@ public class UserSearch : MonoBehaviour
         history.AddUserSearch(searchBar.text);
     }
 
-    public void Search(in string searchPhrase)
+    public void Search(string searchPhrase)
     {
+        searchPhrase = searchPhrase.Replace("@", string.Empty);
+
         searchBar.text = searchPhrase;
         if (searchPhrase.Trim().Length <= 0) // Show All Users
         {
@@ -73,16 +75,16 @@ public class UserSearch : MonoBehaviour
         }
         else if (searchPhrase.Length >= 3 && (searchPhrase[0] == '$' & searchPhrase[1] == '{' & searchPhrase[2] == '}')) // Search Even Private Users
         {
-            string trimSearchPhrase = searchPhrase.Substring(3, searchPhrase.Length - 3);
+            searchPhrase = searchPhrase.Substring(3, searchPhrase.Length - 3);
             int count = 0;
             bool containsPhrase = false;
             foreach (UserSearchResult result in results)
             {
-                containsPhrase = result.username.text.Contains(trimSearchPhrase, System.StringComparison.CurrentCultureIgnoreCase);
+                containsPhrase = result.username.text.Contains(searchPhrase, System.StringComparison.CurrentCultureIgnoreCase);
                 result.gameObject.SetActive(containsPhrase);
                 count += (containsPhrase) ? 1 : 0;
             }
-            resultText.text = $"{count} users containing \"{trimSearchPhrase}\"";
+            resultText.text = $"{count} users containing \"{searchPhrase}\"";
         }
         else // Search for specific user
         {
@@ -109,5 +111,21 @@ public class UserSearch : MonoBehaviour
     public void Show()
     {
         canvasGroup.SetFullVisibility(true);
+    }
+
+    //
+    // UI 
+    //
+
+    public void UIShow()
+    {
+        AudioController.instance.PlayEffectClick();
+        Show();
+    }
+
+    public void UISearch()
+    {
+        AudioController.instance.PlayEffectClick();
+        Search();
     }
 }

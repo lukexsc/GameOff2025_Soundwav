@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour
 
     public void UIStartGame()
     {
+        AudioController.instance.PlayEffectClick();
         UnityEngine.SceneManagement.SceneManager.LoadScene(GAME_SCENE);
     }
 
     public void UIQuitGame()
     {
+        AudioController.instance.PlayEffectClick();
         Application.Quit();
     }
 }

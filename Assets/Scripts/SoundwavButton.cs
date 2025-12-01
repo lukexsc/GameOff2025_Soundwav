@@ -13,6 +13,8 @@ public class SoundwavButton : MonoBehaviour
 
     public void OpenSoundwav()
     {
+        AudioController.instance.PlayEffectClick();
+
         if (!mailbox.Open && !report.Open)
         {
             userProfile.Hide();

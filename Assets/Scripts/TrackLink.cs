@@ -41,6 +41,7 @@ public class TrackLink : MonoBehaviour
 
     public void UIOpen()
     {
+        AudioController.instance.PlayEffectClick();
         database.OpenTrack(username, nameText.text);
     }
 }

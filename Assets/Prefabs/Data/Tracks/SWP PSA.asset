@@ -15,6 +15,7 @@ MonoBehaviour:
   trackName: PSA - THE SONG
   username: SoundwavPodcast
   time: 19:25
+  waveformBlank: 0
   waveformSeed:
     enabled: 0
     _value: 
@@ -82,9 +83,8 @@ MonoBehaviour:
   - username: Tuottor
     content: Holy...
   - username: Troubadource
-    content: The scary thing is, we have no idea how many people could have downloaded
-      it before it got taken off the site. It's popped up enough I'm worried people
-      still have it.
+    content: I wish the site tracked the number of downloads, we don't know the scope
+      of what we're dealing with.
   - username: Folkie
     content: Wait a second, how could anyone have downloaded it from Bleak in the
       first place? Only friends are notified for uploads and I didn't even get in
@@ -96,8 +96,8 @@ MonoBehaviour:
     content: Bot account?
   - username: Tuottor
     content: ChalkRock found it a while ago, it had copies of every track Bleak uploaded
-      plus some other, probably from other accounts. It uploaded sometimes minutes
-      after Bleak did so we assumed it was a bot.
+      plus some from other accounts. It uploaded sometimes minutes after Bleak did
+      so we assumed it was a bot.
   - username: BleakMusic
     content: Yeah, it's still around. I assumed Admin was too busy to deal with it
       at the time.

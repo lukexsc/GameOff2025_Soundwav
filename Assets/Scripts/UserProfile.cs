@@ -179,9 +179,10 @@ public class UserProfile : MonoBehaviour
     {
         canvasGroup.SetFullVisibility(true);
     }
-
+    
     public void UIClose()
     {
+        AudioController.instance.PlayEffectClick();
         Hide();
     }
 }

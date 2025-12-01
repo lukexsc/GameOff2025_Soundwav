@@ -78,6 +78,7 @@ public class GlitchedProfile : MonoBehaviour
 
     public void UIClose()
     {
+        AudioController.instance.PlayEffectClick();
         Hide();
     }
 }

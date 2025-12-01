@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cac918e44bb18754a968ebb7e1cf4275, type: 3}
+  m_Name: Plans (Forum)
+  m_EditorClassIdentifier: 
+  trackName: Plans (Forum)
+  username: Kiazhit
+  time: 0:00
+  waveformBlank: 1
+  waveformSeed:
+    enabled: 0
+    _value: 
+  description: 'If you aren''t going to make forums, admin, I''m doing it myself.
+
+
+    I''m
+    tired of trying to do things in separate private messages, and our mutual hacker
+    friend says the site is probably not long for this world anyway so why not here.
+    Let''s talk PLANS'
+  comments:
+  - username: Kiazhit
+    content: Hey nerds, calling you all in to keep talking here @Mechang @PauseNess
+      @Popek @ThrenodySkater
+  - username: ThrenodySkater
+    content: What about RR?
+  - username: Popek
+    content: He was a coward and hid his account, remember? He's not part of the
+      team any more.
+  - username: PauseNess
+    content: Are we sure we want to talk here? Anyone can read this, including the
+      mods and admin.
+  - username: ThrenodySkater
+    content: Like that even matters at this point.
+  - username: Kiazhit
+    content: Exactly, enough people are trying to find and upload the song now that
+      the admin is swamped. And the mods are getting pinged as we speak. Not much
+      anybody can do.
+  - username: Popek
+    content: "Hey, how do we feel about getting NotPop in on our Plans(TM). I've
+      chatted with him on occasion and he\u2019s chill. Seems like he'd have some
+      good ideas. Plus, he was at ground zero when BleakMusic uploaded the song."
+  - username: PauseNess
+    content: I really don't like the idea of getting more people involved.
+  - username: Kiazhit
+    content: Oh shut up Pause, you'll still get your chance to pick who lives and
+      dies. Frankly, I would welcome some more *creative* uses for the song.
+  - username: ThrenodySkater
+    content: Just because killing rich assholes is obvious doesn't mean it isn't
+      funny as hell.
+  - username: Popek
+    content: Yo @NotPop get in on this.
+  - username: NotPop
+    content: sup, we're posting blank tracks to have public chat rooms now? seems
+      kind of unsecure
+  - username: PauseNess
+    content: That's what I said!
+  - username: Kiazhit
+    content: Hey @NotPop if you could kill anyone, who would it be?
+  - username: NotPop
+    content: idk Hitler?
+  - username: Popek
+    content: No, we mean someone who's alive now
+  - username: NotPop
+    content: well, there are some theories
+  - username: Kiazhit
+    content: Look man, I'm not really in the mood to just joke around. You've heard
+      about the song, right? We happen to know a talented hacker and we're drawing
+      up plans
+  - username: Popek
+    content: For WORLD DOMINATION
+  - username: ThrenodySkater
+    content: Mainly world disruption, but it's a start
+  - username: NotPop
+    content: lol don't tell me you've fallen for that whole deadly song thing
+  - username: Kiazhit
+    content: You know what. I'm just going to shortcut this whole thing. Our mutual
+      friend has already run tests. I'm messaging you clips now. Sound is muted,
+      obviously
+  - username: NotPop
+    content: that's sick
+  - username: Popek
+    content: I told you he'd be onboard
+  - username: NotPop
+    content: no, not... that's murder, like literal murder. you're murdering people
+  - username: Kiazhit
+    content: Yeah. And that's why we wanted to get some ideas. I'm shooting for some
+      world leaders. Popek wants to settle some personal scores. And Threnody wants
+      to start killing billionaires which we're saying is basic.
+  - username: NotPop
+    content: ok, this is new. I get that I'm edgy but I've never had to draw the
+      line between that and literal mass murder before. what the hell is wrong with
+      you people?
+  - username: Kiazhit
+    content: What's wrong with you? First of all, Popek I thought you said this guy
+      was cool? Second, we stumbled on a real-life cognitohazard. It's an actual
+      killer meme. And you want us to, what? Delete it? Leave it alone? It's on the
+      internet already. If we don't use it first, someone else will and we'll lose
+      the element of surprise.
+  - username: NotPop
+    content: wow. my mom was right. the people on the internet really are murderers
+  - username: PauseNess
+    content: See, the other downside of doing chats here is that we can't kick people
+      when they're not cooperating
+  - username: NotPop
+    content: bored now, time for someone else to deal with this @Tuottor @Folkie
+      @BleakMusic @Troubadource
+  - username: Tuottor
+    content: Ah, the literal psychopaths found the song. Of course.
+  - username: Folkie
+    content: I never thought I'd agree with NotPop, but to repeat WHAT IS WRONG WITH
+      YOU PEOPLE?!! @Troubadource suspend all of them!
+  - username: PauseNess
+    content: I made a *private* group chat for us to talk plans. I'm logging off.
+  - username: Popek
+    content: You don't need to rub it in.
+  - username: Kiazhit
+    content: No! We would have gotten away with it too if it wasn't for you and your
+      meddling mod!
+  - username: Kiazhit
+    content: jk, Troubadource won't be answering your messages any time soon. Or
+      ever again. Did you know that you can hack the site's private messages to force
+      tracks to auto-play? Troubadource is probably too busy listening to tunes.
+  - username: Folkie
+    content: That's... not possible. You're lying! What did you do to them?
+  - username: Kiazhit
+    content: Possible? My hacker friend said it was *easy*. This site is held together
+      with duct tape and tissue paper. Like, did you know that if you put ${} in
+      front of your user search, it shows *privated* accounts? You should be lucky
+      there's no payment info stored here.
+  - username: BleakMusic
+    content: '@Admin your moderators are being hacked, you need to suspend these
+      people!'
+  - username: Kiazhit
+    content: Pft, the admin never responds to @ messages. Even if they did, there's
+      *way* too much going on right now.
+  - username: Kiazhit
+    content: Listen, in honor of you, BleakMusic, who made this all possible, I'm
+      going to give you a heads-up. You should log off soon. Once the site is fully
+      hacked, *everyone* is going to get a nice song in their inbox. First Soundwav,
+      then the world.
+  - username: Kiazhit
+    content: Oh and don't bother trying to find anything about my hacker friend.
+      They glitched and booby-trapped their account first-thing. I'd recommend leaving
+      it alone. Anyway, hmu if you want in, but I need to check in with the others,
+      ciao
+  - username: Folkie
+    content: 'Don''t just walk away from this, you need to answer for what you''re
+      doing! '
+  - username: Tuottor
+    content: Folkie, there's no reasoning with them. We need to either come up with
+      a plan, fast, or log off.
+  - username: Folkie
+    content: I'm not just going to let everyone get hit by this song like Chalk was.
+      We need to figure out how to contact the admin so they can suspend the hacker
+      and these jokers and stop all this.
+  - username: NotPop
+    content: Just an idea, but if they don't respond to messages, maybe we can interact
+      with their account. It's private so that would probably get their attention.

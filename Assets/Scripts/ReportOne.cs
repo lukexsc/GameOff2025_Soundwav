@@ -25,6 +25,8 @@ public class ReportOne : MonoBehaviour
 
     public void SubmitAnswer()
     {
+        AudioController.instance.PlayEffectClick();
+
         bool isCorrect = correctAnswer.Equals(answerInput.text, System.StringComparison.CurrentCultureIgnoreCase);
         outputText.text = (isCorrect) ? "Correct!" : "Incorrect";
 

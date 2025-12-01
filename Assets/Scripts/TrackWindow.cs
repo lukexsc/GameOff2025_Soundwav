@@ -131,4 +131,10 @@ public class TrackWindow : MonoBehaviour
             line.sizeDelta = new Vector2(line.sizeDelta.x, WAVE_MIN_HEIGHT);
         }
     }
+    
+    public void UIClose()
+    {
+        AudioController.instance.PlayEffectClick();
+        Hide();
+    }
 }

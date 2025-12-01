@@ -15,6 +15,7 @@ MonoBehaviour:
   trackName: '[Deleted]'
   username: LostMedian
   time: 4:51
+  waveformBlank: 0
   waveformSeed:
     enabled: 1
     _value: TheSong
@@ -59,7 +60,7 @@ MonoBehaviour:
   - username: LostMedian
     content: HEY!
   - username: LostMedian
-    content: '@Admin I knew you''d delete this? Why are you trying to get rid of
+    content: '@Admin I knew you''d delete this! Why are you trying to get rid of
       this song? Don''t you know that the internet never forgets'
   - username: Troubadource
     content: I'm pretty sure that's what we're all afraid of

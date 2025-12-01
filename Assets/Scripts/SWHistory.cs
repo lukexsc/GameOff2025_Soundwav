@@ -49,6 +49,8 @@ public class SWHistory : MonoBehaviour
 
     public void UIGoBack()
     {
+        AudioController.instance.PlayEffectClick();
+
         if (history.Count > 1) history.Pop();
 
         GameState backState = history.Peek();

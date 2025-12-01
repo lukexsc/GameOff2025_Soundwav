@@ -11,6 +11,7 @@ public class MailItem : MonoBehaviour
 
     public void UIOpen()
     {
+        AudioController.instance.PlayEffectClick();
         database.OpenEmail(mailIndex);
     }
 }

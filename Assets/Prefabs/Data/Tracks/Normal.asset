@@ -15,8 +15,28 @@ MonoBehaviour:
   trackName: Normal
   username: KittyOstinato
   time: 4:51
+  waveformBlank: 0
   waveformSeed:
     enabled: 1
     _value: TheSong
   description: Recommended by my friend LostMedian
-  comments: []
+  comments:
+  - username: Kiazhit
+    content: Finally, a re-upload that *wasn't* taken down. I can't believe the mods
+      only searched based on name.
+  - username: Folkie
+    content: '@Tuottor @BleakMusic @Troubadource Found it. The upload was pretty
+      soon after LostMedian pinged their friends about it. This might be the source
+      for how it kept getting spread. Maybe this Kiazhit is the culprit.'
+  - username: Tuottor
+    content: Good find. That sounds likely.
+  - username: Folkie
+    content: '@Troubadource If you haven''t already you should delete this track
+      or suspend the account entirely.'
+  - username: Folkie
+    content: '@Troubadource Hey, I know you''re busy, but this is important!'
+  - username: Folkie
+    content: He hasn't taken this long before. I'm getting worried.
+  - username: Tuottor
+    content: I just got pinged by NotPop of all people. I know you're pissed at him,
+      but it's related to the poster of the first comment here and seems serious.

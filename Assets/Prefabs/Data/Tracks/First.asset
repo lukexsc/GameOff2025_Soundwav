@@ -15,6 +15,7 @@ MonoBehaviour:
   trackName: First
   username: Admin
   time: 3:39
+  waveformBlank: 0
   waveformSeed:
     enabled: 0
     _value: 
@@ -23,4 +24,58 @@ MonoBehaviour:
     music doesn't translate into skill and it especially didn't when I wrote this
     in college. It's not perfect but neither is this site. If I'm expecting people
     to share their art, I should act first, even behind the scenes.
-  comments: []
+  comments:
+  - username: Folkie
+    content: I'm not sure how messages work on private accounts but it's worth trying
+      @BleakMusic @Tuottor
+  - username: Folkie
+    content: and @NotPop
+  - username: NotPop
+    content: just glad to be included, I guess
+  - username: Folkie
+    content: I'm still mad at you, but thank you for doing the right thing there
+  - username: NotPop
+    content: 'uh... thanks? you make it sound like I''d consider killing people for
+      fun '
+  - username: Tuottor
+    content: Not to cut the banter short but @Admin @Admin @Admin
+  - username: NotPop
+    content: '@Admin im in ur base killin ur d00dz'
+  - username: BleakMusic
+    content: '@Admin before you ban us, please listen! There are people trying to
+      hack your site!'
+  - username: Admin
+    content: You came to warn me about people hacking my site... by hacking my site?
+  - username: Folkie
+    content: There's no time! There are a bunch of people (@Kiazhit @Mechang @PauseNess
+      @Popek and @ThrenodySkater) that are working with a hacker. They want to use
+      the song to kill a bunch of people including people using the site. You need
+      to stop them!
+  - username: Admin
+    content: I'm already on it. Despite the blocks I put up, people are still looking
+      for and trying to upload the song. My mods aren't responding and I'm fearing
+      the worst. But just tell me the hacker's username and I can remove the account
+      from the database. It's not perfect but it gives me time to take down the whole
+      site.
+  - username: BleakMusic
+    content: But the hacker and their friends might have downloaded the song already!
+  - username: Admin
+    content: I'm sorry to say that there's not much we can do about that. That problem
+      is for later. Get me the username and I'll remove the account.
+  - username: Tuottor
+    content: Unfortunately, the hacker's account is... hacked. The data can't be
+      accessed and it's dangerous to even try to load it. So, we don't know the username.
+  - username: NotPop
+    content: can't you just look it up?
+  - username: Admin
+    content: Not without triggering the same traps.
+  - username: Folkie
+    content: Is there nothing we can do then? Any work-around?
+  - username: Admin
+    content: Actually, there might be. There's a bug I've had yet to address. Private
+      accounts sometimes can still see deleted or renamed accounts in their friends
+      lists. If you can find a private account that's friends with the hacker, you
+      should be able to see the hacker's username.
+  - username: Folkie
+    content: Got it. We'll see if his public friends have any leads. Keep an eye
+      out, we'll @ you when we find it

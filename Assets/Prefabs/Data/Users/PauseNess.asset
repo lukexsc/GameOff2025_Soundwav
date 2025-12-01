@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: PauseNess
   suspended: 0
-  bio: '[No bio added.]'
+  bio: I'm so tired.
   friends:
   - Kiazhit
   - Mechang

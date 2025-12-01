@@ -11,6 +11,7 @@ public class UserSearchResult : MonoBehaviour
 
     public void UIOpen()
     {
+        AudioController.instance.PlayEffectClick();
         if (glitched) // Hacked User
         {
             database.OpenGlichedUser();

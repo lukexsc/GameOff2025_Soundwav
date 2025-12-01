@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   username: Kiazhit
   suspended: 0
-  bio: '[No bio added.]'
+  bio: Frankly, watching the world burn sounds pretty good right about now.
   friends:
   - Mechang
   - PauseNess

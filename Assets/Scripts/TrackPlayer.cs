@@ -72,6 +72,7 @@ public class TrackPlayer : MonoBehaviour
         SetWaveform();
 
         musicPlayer.Play();
+        AudioController.instance.StopMusic();
     }
 
     private void SetWaveform()
